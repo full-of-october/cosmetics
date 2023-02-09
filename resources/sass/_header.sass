@@ -1,0 +1,37 @@
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 45px 0
+
+.container-fluid
+  padding: 0
+
+.header__profile-icon
+  padding-right: 8px
+
+.header-icon--zoom
+  transition: all 0.3s ease-in-out
+  &:hover
+    transform: scale(1.2, 1.2)
+
+.header__nav-item--text
+  font-size: 24px
+  +md
+    font-size: 14px
+
+.item-text--black
+  color: #555555
+
+.contacts-link-text
+  padding: 8px 0
+
+.nav-link--decoration
+  transition: all 1s ease
+  +md
+    &:hover
+      transform: translate(0, 5px)
+      border-bottom: 1px solid #555555
+
+.navbar-toggler:focus
+  box-shadow: none

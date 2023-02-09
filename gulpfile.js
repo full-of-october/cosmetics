@@ -8,7 +8,7 @@ const postcss = require("gulp-postcss");
 
 var twig = require('gulp-twig');
 
-sass.compiler = require("node-sass");
+// sass.compiler = require("node-sass");
 
 const stylesDev = "./resources/sass/**/*.sass",
     stylesAll = [

@@ -3908,11 +3908,11 @@ main {
   transform: scale(1.2, 1.2);
 }
 
-.header__nav-item--text {
+.header__nav-item--size {
   font-size: 24px;
 }
 @media only screen and (min-width: 768px) {
-  .header__nav-item--text {
+  .header__nav-item--size {
     font-size: 14px;
   }
 }
@@ -3937,4 +3937,12 @@ main {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.title {
+  font-size: 36px;
+  font-size: 48px;
+}
+.item-text {
+  font-size: 14px;
 }

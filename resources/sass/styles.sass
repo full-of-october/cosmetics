@@ -24,3 +24,38 @@
 //     padding-top: 40px
 //     border-top: 1px solid rgba(0, 0, 0, 0.05)
 //     margin-top: 15px  
+
+.category-menu
+  background: #EEE4DA
+  padding: 13px 0 14px 0
+  margin-bottom: 30px
+  +lg
+    margin-bottom: 70px
+
+.category-menu__inner
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  +lg
+    flex-direction: row
+
+.category-menu__link
+  font-size: 14px
+  opacity: 0.4
+  &--active
+    opacity: 1
+
+.category-menu__link + .category-menu__link
+  +max(992)
+    margin-top: 10px
+  +lg
+    margin-left: 70px
+
+.category-hero__title
+  text-align: center
+  margin-bottom: 30px
+
+.category-hero__image
+  height: 350px
+  object-fit: cover

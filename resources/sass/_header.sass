@@ -1,8 +1,7 @@
 .header
-  display: flex
-  justify-content: space-between
-  align-items: center
-  padding: 45px 0
+  padding: 19px 0
+  +lg
+    padding: 45px 0
 
 .container-fluid
   padding: 0
@@ -17,7 +16,7 @@
 
 .header__nav-item--size
   font-size: 24px
-  +md
+  +lg
     font-size: 14px
 
 .item-text--black
@@ -26,12 +25,20 @@
 .contacts-link-text
   padding: 8px 0
 
+.navbar-expand-lg .navbar-nav .nav-link--decoration
+  padding-left: 0
+  padding-right: 0
+  margin-left: 8px
+  margin-right: 8px
+
 .nav-link--decoration
   transition: all 1s ease
-  +md
+  padding-top: 4px
+  padding-bottom: 4px
+  border-bottom: 1px solid transparent
+  +lg
     &:hover
-      transform: translate(0, 5px)
-      border-bottom: 1px solid #555555
+      transform: translate(0, 2px)
+      border-bottom: 1px solid #555555 
 
-.navbar-toggler:focus
-  box-shadow: none
+

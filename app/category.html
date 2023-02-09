@@ -19,7 +19,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <a class="navbar-brand logo order-lg-2" href="#">
+      <a class="fade-in navbar-brand logo order-lg-2" href="#">
         <svg width="180" height="16" viewBox="0 0 180 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M0 0.347213H7.65743C10.7553 0.347213 12.8513 1.29907 12.8513 4.17858C12.8513 5.73707 12.0994 6.73282 10.6419 7.40531C12.6476 7.94609 13.6263 9.40081 13.6263 11.3225C13.6263 14.4634 10.8246 15.8044 7.88425 15.8044H0V0.347213ZM3.57039 6.60312H7.19958C8.47652 6.60312 9.38802 6.06234 9.38802 4.76326C9.38802 3.31253 8.20349 2.99325 6.93075 2.99325H3.57039V6.60312ZM3.57039 13.1703H7.4054C8.79575 13.1703 10.0496 12.7373 10.0496 11.1349C10.0496 9.53252 9.03098 8.9199 7.47471 8.9199H3.57039V13.1703Z"
@@ -46,17 +46,19 @@
       </a>
 
       <div class="d-flex gap-5 order-lg-3">
-        <a class="nav-link d-none d-lg-block header__nav-item--size item-text--black nav-link--decoration contacts-link-text"
-          href="#">Contacts</a>
+        <div class="fade-in-right opacity-0">
+          <a class="nav-link d-none d-lg-block header__nav-item--size item-text--black nav-link--decoration contacts-link-text"
+            href="#">Contacts</a>
+        </div>
         <div class="gap-4 d-flex">
-          <button class="d-none d-lg-block search-icon header-icon--zoom">
+          <button class="fade-in-right opacity-0 delay-02 d-none d-lg-block search-icon">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M15 15L10.9556 10.9556M12.6667 6.83333C12.6667 10.055 10.055 12.6667 6.83333 12.6667C3.61167 12.6667 1 10.055 1 6.83333C1 3.61167 3.61167 1 6.83333 1C10.055 1 12.6667 3.61167 12.6667 6.83333Z"
                 stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
-          <button class="bag-icon header-icon--zoom">
+          <button class="fade-in-right delay-04 bag-icon header__bag-icon">
             <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M11.9975 3.2746H10.5499C10.4777 2.45197 10.0872 1.68543 9.45564 1.12678C8.82409 0.568129 7.9976 0.258107 7.13983 0.258107C6.28206 0.258107 5.45556 0.568129 4.82402 1.12678C4.19247 1.68543 3.80193 2.45197 3.72973 3.2746H2.28214C1.74533 3.2746 1.23051 3.47984 0.850933 3.84516C0.471353 4.21049 0.258107 4.70598 0.258107 5.22263V13.794C0.258107 14.3106 0.471353 14.8061 0.850933 15.1714C1.23051 15.5367 1.74533 15.742 2.28214 15.742H11.9975C12.5343 15.742 13.0491 15.5367 13.4287 15.1714C13.8083 14.8061 14.0215 14.3106 14.0215 13.794V5.22263C14.0215 4.70598 13.8083 4.21049 13.4287 3.84516C13.0491 3.47984 12.5343 3.2746 11.9975 3.2746ZM7.13983 1.03437C7.78318 1.03629 8.40341 1.26548 8.88278 1.67845C9.36216 2.09141 9.66731 2.6594 9.74031 3.2746H4.53935C4.61235 2.6594 4.9175 2.09141 5.39687 1.67845C5.87625 1.26548 6.49647 1.03629 7.13983 1.03437ZM13.2119 13.794C13.2119 14.1039 13.084 14.4012 12.8562 14.6204C12.6285 14.8396 12.3196 14.9628 11.9975 14.9628H2.28214C1.96006 14.9628 1.65116 14.8396 1.42342 14.6204C1.19567 14.4012 1.06772 14.1039 1.06772 13.794V5.22263C1.06772 4.91264 1.19567 4.61534 1.42342 4.39615C1.65116 4.17695 1.96006 4.05381 2.28214 4.05381H11.9975C12.3196 4.05381 12.6285 4.17695 12.8562 4.39615C13.084 4.61534 13.2119 4.91264 13.2119 5.22263V13.794Z"
@@ -66,7 +68,7 @@
                 fill="#555555" />
             </svg>
           </button>
-          <button class="profile-icon header__profile-icon header-icon--zoom d-none d-lg-block">
+          <button class="fade-in-right opacity-0 delay-06 profile-icon header__profile-icon d-none d-lg-block">
             <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M11.8116 8.11075C11.7543 8.05377 11.6862 8.00866 11.6114 7.97798C11.5366 7.9473 11.4565 7.93166 11.3756 7.93194C11.2948 7.93223 11.2148 7.94844 11.1402 7.97964C11.0656 8.01085 10.9978 8.05644 10.9409 8.11382C10.8839 8.1712 10.8388 8.23924 10.8081 8.31405C10.7774 8.38886 10.7618 8.46899 10.7621 8.54984C10.7624 8.6307 10.7786 8.71071 10.8098 8.78531C10.841 8.8599 10.8866 8.92762 10.9439 8.98459C11.4647 9.49979 11.878 10.1132 12.16 10.7892C12.4421 11.4653 12.5872 12.1905 12.587 12.9231C12.587 13.6738 10.427 14.7692 7.04856 14.7692C3.6701 14.7692 1.5101 13.6738 1.5101 12.9231C1.50913 12.1954 1.65156 11.4746 1.92927 10.802C2.20697 10.1294 2.6145 9.51809 3.12857 9.00305C3.24318 8.88775 3.30751 8.73178 3.30751 8.56921C3.30751 8.40663 3.24318 8.25066 3.12857 8.13536C3.01327 8.02074 2.8573 7.95641 2.69472 7.95641C2.53214 7.95641 2.37617 8.02074 2.26087 8.13536C1.63017 8.76254 1.13025 9.50869 0.790098 10.3305C0.449949 11.1524 0.276339 12.0336 0.279335 12.9231C0.279335 14.9231 3.76857 16 7.04856 16C10.3286 16 13.8178 14.9231 13.8178 12.9231C13.8202 12.0278 13.6439 11.1411 13.2995 10.3148C12.955 9.48851 12.4492 8.7392 11.8116 8.11075Z"
@@ -85,14 +87,14 @@
             <a class="nav-link header__nav-item--size item-text--black nav-link--decoration d-lg-none"
               aria-current="page" href="#">Main page</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item fade-in-left delay-04">
             <a class="nav-link nav-link--active header__nav-item--size item-text--black nav-link--decoration"
               aria-current="page" href="#">Catalog</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item fade-in-left delay-02">
             <a class="nav-link header__nav-item--size item-text--black nav-link--decoration" href="#">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item fade-in-left">
             <a class="nav-link header__nav-item--size item-text--black nav-link--decoration">Delivery</a>
           </li>
           <li class="nav-item d-lg-none">

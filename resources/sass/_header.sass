@@ -7,11 +7,6 @@
 .header__profile-icon
   padding-right: 8px
 
-.header-icon--zoom
-  transition: all 0.3s ease-in-out
-  &:hover
-    transform: scale(1.1, 1.1)
-
 .header__nav-item--size
   font-size: 24px
   +lg
@@ -54,8 +49,15 @@
     margin-top: 40px
 
 .nav-item
+  +lg
+    opacity: 0
   +max(992)
     margin-bottom: 10px
 
 .nav-link--active
   color: #AC8F78
+
+.header__bag-icon
+  opacity: 1
+  +lg
+    opacity: 0

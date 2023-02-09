@@ -13,3 +13,7 @@
 =sm
   @media only screen and (min-width: $sm-screen)
     @content
+
+=max($max-width)
+  @media only screen and (max-width: #{$max-width}px)
+    @content

@@ -3475,16 +3475,13 @@ main {
 }
 
 .header {
+  position: relative;
   padding: 19px 0;
 }
 @media only screen and (min-width: 992px) {
   .header {
     padding: 45px 0;
   }
-}
-
-.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
-  padding: 0;
 }
 
 .header__profile-icon {
@@ -3495,7 +3492,7 @@ main {
   transition: all 0.3s ease-in-out;
 }
 .header-icon--zoom:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .header__nav-item--size {
@@ -3523,7 +3520,7 @@ main {
 }
 
 .nav-link--decoration {
-  transition: all 1s ease;
+  transition: all 0.3s ease;
   padding-top: 4px;
   padding-bottom: 4px;
   border-bottom: 1px solid transparent;
@@ -3533,6 +3530,34 @@ main {
     transform: translate(0, 2px);
     border-bottom: 1px solid #555555;
   }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-wrap:before {
+    content: " ";
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.05);
+    left: 0;
+    top: 57px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-wrap {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-item {
+    margin-bottom: 10px;
+  }
+}
+
+.nav-link--active {
+  color: #AC8F78;
 }
 
 .title {

@@ -1,10 +1,8 @@
 .header
+  position: relative
   padding: 19px 0
   +lg
     padding: 45px 0
-
-.container-fluid
-  padding: 0
 
 .header__profile-icon
   padding-right: 8px
@@ -12,7 +10,7 @@
 .header-icon--zoom
   transition: all 0.3s ease-in-out
   &:hover
-    transform: scale(1.2, 1.2)
+    transform: scale(1.1, 1.1)
 
 .header__nav-item--size
   font-size: 24px
@@ -32,13 +30,32 @@
   margin-right: 8px
 
 .nav-link--decoration
-  transition: all 1s ease
+  transition: all 0.3s ease
   padding-top: 4px
   padding-bottom: 4px
   border-bottom: 1px solid transparent
   +lg
     &:hover
       transform: translate(0, 2px)
-      border-bottom: 1px solid #555555 
+      border-bottom: 1px solid #555555
 
+.navbar-wrap:before
+  +max(992)
+    content: " "
+    width: 100%
+    position: absolute
+    height: 1px
+    background: rgba(0, 0, 0, 0.05)
+    left: 0
+    top: 57px
 
+.navbar-wrap
+  +max(992)
+    margin-top: 40px
+
+.nav-item
+  +max(992)
+    margin-bottom: 10px
+
+.nav-link--active
+  color: #AC8F78

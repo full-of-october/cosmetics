@@ -4,11 +4,10 @@ const sass = require("gulp-dart-sass");
 const concat = require("gulp-concat");
 const pug = require('gulp-pug');
 const browserSync = require("browser-sync").create();
-const postcss = require("gulp-postcss");
 
 var twig = require('gulp-twig');
 
-sass.compiler = require("node-sass");
+// sass.compiler = require("node-sass");
 
 const stylesDev = "./resources/sass/**/*.sass",
     stylesAll = [

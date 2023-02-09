@@ -18,8 +18,7 @@
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-dart-sass": "^1.0.2",
-    "gulp-js-import": "^1.0.6",
-    "node-sass": "^7.0.0"
+    "gulp-js-import": "^1.0.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -74,17 +74,19 @@ gulp.task("js", function (done) {
 gulp.task("html", function (done) {
     return gulp
         .src('./resources/twig/pages/*.twig')
-        .pipe(twig({
-            data: {
-                title: 'Gulp and Twig',
-                benefits: [
-                    'Fast',
-                    'Flexible',
-                    'Secure'
-                ]
-            }
-        }))
+        .pipe(twig())
         .pipe(gulp.dest('./app/'))
+        .pipe(browserSync.reload({ stream: true }));
+
+    done();
+});
+
+gulp.task("bootstrap", function (done) {
+    return gulp
+        .src(['./resources/bootstrap/**/*.sass', './resources/bootstrap/**/*.scss'])
+        .pipe(sass())
+        .pipe(concat("bootstrap.css"))
+        .pipe(gulp.dest(stylesProdDir))
         .pipe(browserSync.reload({ stream: true }));
 
     done();
@@ -96,10 +98,22 @@ gulp.task(
         gulp.watch(
             [
                 "./resources/sass/**/*.sass",
-                "./resources/js/**/*.js",
+            ],
+            gulp.series("sass")
+        );
+
+        gulp.watch(
+            [
                 "./resources/twig/**/*.twig",
             ],
-            gulp.series("html", "sass", "js")
+            gulp.series("html")
+        );
+
+        gulp.watch(
+            [
+                "./resources/js/**/*.js",
+            ],
+            gulp.series("js")
         );
 
         done();

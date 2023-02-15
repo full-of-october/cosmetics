@@ -14,40 +14,6 @@
   border-radius: 6px
   overflow: hidden
 
-.card
-  background: #EEE4DA
-  border-radius: 6px
-  width: 100%
-  position: relative
-  transition: all 0.2s ease-in-out
-  &:hover
-    background: #F5ECE3
-
-.card__text
-  position: absolute
-  bottom: 0
-  left: 0
-  width: 100%
-  display: flex
-  justify-content: space-between
-  padding: 25px
-
-.card__product
-  font-size: 16px
-
-.card__price
-  font-weight: 500
-  +lg
-    font-weight: 400
-
-.card__image-wrap
-  padding: 15px
-
-.card__image
-  width: 100%
-  height: 100%
-  object-fit: cover
-
 .cosmetic-items
   margin-top: 65px
   margin-bottom: 70px
@@ -61,25 +27,56 @@
     grid-template-columns: repeat(4 , 1fr)
     grid-template-rows: 430px 430px 430px 430px 430px
 
-.card__image-wrap--big
-  padding: 40px
-  height: 100%
+.card
+  background: #EEE4DA
+  border-radius: 6px
+  width: 100%
+  position: relative
+  transition: all 0.2s ease-in-out
+  &:hover
+    background: #F5ECE3
 
-.card--bigger
-  +lg
-    grid-column-start: span 2
-    grid-row-start: span 2
+  &--bigger
+    +lg
+      grid-column-start: span 2
+      grid-row-start: span 2
 
-.card__product--bigger
-  +lg
-    font-size: 20px
+  &__text
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 25px
 
-.card__price--bigger
-  +lg
-    font-size: 24px
+  &__product
+    font-size: 16px
+    &--bigger
+      +lg
+        font-size: 20px
+
+  &__price
+    font-weight: 500
+    +lg
+      font-weight: 400
+
+    &--bigger
+      +lg
+        font-size: 24px
+
+  &__image-wrap
+    padding: 15px
+    &--big
+      padding: 40px
+      height: 100%
+
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
 
 .category-card
-
   +max(767)
     max-height: 430px
     flex: 1 1 calc(50% - 10px)

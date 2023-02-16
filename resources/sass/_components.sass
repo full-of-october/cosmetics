@@ -86,3 +86,66 @@
     flex: 1 1 100%
     max-width: 375px
     margin: 0 auto
+
+// card grid  end    
+
+// brand-info start  
+
+.brand-info
+  +md
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 10px
+  &__image
+    +lg
+      padding: 0
+      width: 50%
+
+  &__description
+    padding: 15px
+    +lg
+      width: 50%
+
+  &__description-inner
+    max-width: 490px
+    margin: 0 auto
+    +sm
+      text-align: center
+    +md
+      text-align: start
+
+.decription-logo
+  +sm
+    display: flex
+    justify-content: center
+  +md
+    display: block
+
+.decription-title
+  font-size: 22px
+  line-height: 150%
+  letter-spacing: -0.03em
+  +lg
+    font-size: 32px
+
+.decription-text
+  font-size: 16px
+  line-height: 180%
+  letter-spacing: -0.02em
+  +lg
+    font-size: 18px
+
+.decription-title--position
+  margin: 30px 0 20px
+  +lg
+    margin: 68px 0 35px
+
+.info-image
+  width: 100%
+  margin: 0 auto
+  height: 400px
+  object-fit: cover
+  +md
+    margin: 0
+    height: auto

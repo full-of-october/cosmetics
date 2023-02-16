@@ -423,6 +423,99 @@ main {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .brand-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .brand-info__image {
+    padding: 0;
+    width: 50%;
+  }
+}
+.brand-info__description {
+  padding: 15px;
+}
+@media only screen and (min-width: 1024px) {
+  .brand-info__description {
+    width: 50%;
+  }
+}
+.brand-info__description-inner {
+  max-width: 490px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 575px) {
+  .brand-info__description-inner {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .brand-info__description-inner {
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .decription-logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .decription-logo {
+    display: block;
+  }
+}
+
+.decription-title {
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+}
+@media only screen and (min-width: 1024px) {
+  .decription-title {
+    font-size: 32px;
+  }
+}
+
+.decription-text {
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: -0.02em;
+}
+@media only screen and (min-width: 1024px) {
+  .decription-text {
+    font-size: 18px;
+  }
+}
+
+.decription-title--position {
+  margin: 30px 0 20px;
+}
+@media only screen and (min-width: 1024px) {
+  .decription-title--position {
+    margin: 68px 0 35px;
+  }
+}
+
+.info-image {
+  width: 100%;
+  margin: 0 auto;
+  height: 400px;
+  object-fit: cover;
+}
+@media only screen and (min-width: 768px) {
+  .info-image {
+    margin: 0;
+    height: auto;
+  }
+}
+
 .category-menu {
   background: #EEE4DA;
   padding: 13px 0 14px 0;

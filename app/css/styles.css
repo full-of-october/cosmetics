@@ -355,6 +355,7 @@ main {
   width: 100%;
   position: relative;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 .card:hover {
   background: #F5ECE3;
@@ -460,6 +461,10 @@ main {
   }
 }
 
+.brand-info--position {
+  margin-bottom: 80px;
+}
+
 @media only screen and (min-width: 575px) {
   .decription-logo {
     display: flex;
@@ -514,6 +519,156 @@ main {
     margin: 0;
     height: auto;
   }
+}
+
+.footer {
+  background: #EEE4DA;
+  padding: 50px 0 30px;
+}
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding: 75px 0 140px;
+  }
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.footer__logo-wrap {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1024px) {
+  .footer__logo-wrap {
+    padding-bottom: 65px;
+    margin-bottom: 65px;
+  }
+}
+.footer__text {
+  font-size: 14px;
+  opacity: 0.4;
+  line-height: 160%;
+}
+.footer__text--benefit {
+  text-align: center;
+  margin-bottom: 23px;
+  max-width: 710px;
+}
+@media only screen and (min-width: 1024px) {
+  .footer__text--benefit {
+    text-align: start;
+    max-width: 250px;
+  }
+}
+.footer__btn-wrap {
+  display: flex;
+  gap: 17px;
+  justify-content: center;
+}
+@media only screen and (min-width: 1024px) {
+  .footer__btn-wrap {
+    justify-content: space-between;
+  }
+}
+.footer__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 66px;
+  background: #F5ECE3;
+  width: 164px;
+  height: 50px;
+}
+@media only screen and (min-width: 1024px) {
+  .footer__btn {
+    background: none;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+  }
+}
+.footer__btn-text {
+  font-size: 16px;
+}
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 40px 0 35px;
+}
+@media only screen and (min-width: 1024px) {
+  .footer__socials {
+    margin: 25px 0;
+    justify-content: start;
+  }
+}
+.footer__signature {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 1024px) {
+  .footer__signature {
+    justify-content: start;
+  }
+}
+.footer__nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+.footer__nav-list-item {
+  margin-bottom: 25px;
+  transition: all 0.4s ease;
+}
+.footer__nav-list-item:hover {
+  transform: translate(0, 4px);
+}
+.footer__nav-title {
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  .footer__nav-title {
+    display: block;
+  }
+}
+.footer__nav-title--benefit {
+  margin-bottom: 26px;
+}
+.footer__nav-title--links {
+  margin-bottom: 42px;
+}
+
+.socials__item {
+  width: 44px;
+  height: 44px;
+  background: #F5ECE3;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  margin: 47px 0 30px;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 1024px) {
+  .copyright {
+    display: none;
+  }
+}
+.copyright__text {
+  opacity: 0.2;
+  font-size: 14px;
 }
 
 .category-menu {

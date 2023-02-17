@@ -1,0 +1,117 @@
+.footer
+  background: #EEE4DA
+  padding: 50px 0 30px
+  +lg
+    padding: 75px 0 140px
+
+  &__content
+    display: flex
+    justify-content: space-between
+    padding: 0 15px
+
+  &__logo-wrap
+    display: flex
+    justify-content: center
+    border-bottom: 1px solid rgba(#000000, 0.05 )
+    padding-bottom: 40px
+    margin-bottom: 30px
+    +lg
+      padding-bottom: 65px
+      margin-bottom: 65px
+
+  &__text
+    font-size: 14px
+    opacity: 0.4
+    line-height: 160%
+
+  &__text--benefit
+    text-align: center
+    margin-bottom: 23px
+    max-width: 710px
+    +lg
+      text-align: start
+      max-width: 250px
+
+  &__btn-wrap
+    display: flex
+    gap: 17px
+    justify-content: center
+    +lg
+      justify-content: space-between
+
+  &__btn
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 12px
+    border-radius: 66px
+    background: #F5ECE3
+    width: 164px
+    height: 50px
+    +lg
+      background: none
+      width: 100%
+      height: 100%
+      justify-content: start
+
+  &__btn-text
+    font-size: 16px
+
+  &__socials
+    margin: 40px 0 35px
+    +lg
+      margin: 25px 0
+      justify-content: start
+
+  &__signature
+    display: flex
+    justify-content: center
+    +lg
+      justify-content: start
+
+  &__nav-list
+    list-style-type: none
+    padding: 0
+
+  &__nav-list-item
+    margin-bottom: 25px
+    transition: all 0.4s ease
+    &:hover
+      transform: translate(0, 4px)
+
+  &__nav-title
+    font-size: 20px
+    letter-spacing: -0.02em
+    font-weight: 400
+    display: none
+    +lg
+      display: block
+    &--benefit
+      margin-bottom: 26px
+    &--links
+      margin-bottom: 42px
+
+.socials
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 10px
+  &__item
+    width: 44px
+    height: 44px
+    background: #F5ECE3
+    border-radius: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.copyright
+  margin: 47px 0 30px
+  display: flex
+  justify-content: center
+  +lg
+    display: none
+
+  &__text
+    opacity: 0.2
+    font-size: 14px

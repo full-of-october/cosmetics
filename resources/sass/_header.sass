@@ -4,6 +4,15 @@
   +lg
     padding: 45px 0
 
+  &--absolute
+    position: absolute
+    z-index: 10
+    min-height: 600px
+    transition: 0.8s all ease
+
+.navbar--mobile
+  background: #F5ECE3
+
 .header__profile-icon
   padding-right: 8px
 
@@ -12,8 +21,17 @@
   +lg
     font-size: 14px
 
-.item-text--black
-  color: #555555
+.item-text
+  &--black
+    color: #555555
+
+  &--white
+    color: #FFFFFF
+
+  &--main
+    color: #555555
+    +lg
+      color: #FFFFFF
 
 .contacts-link-text
   padding: 8px 0
@@ -61,3 +79,27 @@
   opacity: 1
   +lg
     opacity: 0
+
+.toggler-icon
+  display: block
+  height: 2px
+  width: 22px
+  border-radius: 8px
+  background: #555555
+  &--white
+    background: #fff
+
+.toggler-icon + .toggler-icon
+  margin-top: 5px
+
+.header__socials
+  margin: 40px 0
+  +lg
+    display: none
+
+.header__signature
+  margin: 35px 0
+  display: flex
+  justify-content: center
+  +lg
+    display: none

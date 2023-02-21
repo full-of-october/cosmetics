@@ -468,6 +468,11 @@ main {
   min-height: 600px;
   transition: 0.8s all ease;
 }
+@media only screen and (min-width: 768px) {
+  .header--absolute {
+    min-height: auto;
+  }
+}
 
 .navbar--mobile {
   background: #F5ECE3;
@@ -799,10 +804,6 @@ main {
   border-radius: 50%;
   width: 10px;
   height: 10px;
-}
-
-.carousel-item--relative {
-  position: relative;
 }
 
 .carousel-item__title {

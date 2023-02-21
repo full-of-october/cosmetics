@@ -2,9 +2,9 @@
 @import "_mixins"
 @import "_animation"
 @import "_fonts"
+@import "_components"
 @import "_general"
 @import "_header"
-@import "_components"
 @import "_footer"
 @import "_modal"
 @import "_vendor-custom"
@@ -23,6 +23,8 @@
 //     padding-top: 40px
 //     border-top: 1px solid rgba(0, 0, 0, 0.05)
 //     margin-top: 15px  
+
+// category start
 
 .category-menu
   background: #EEE4DA
@@ -60,3 +62,92 @@
   object-fit: cover
   +lg
     height: auto
+
+// category end    
+
+// index start  
+
+.carousel-hero .carousel-indicators button
+  border-radius: 50%
+  width: 10px
+  height: 10px
+
+.carousel-item--relative
+  position: relative
+
+.carousel-item__title
+  position: absolute
+  color: #FFFFFF
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  letter-spacing: -0.04em
+  min-width: 300px
+  text-align: center
+
+.carousel-item__line
+  background: white
+  opacity: 0.3
+  height: 2px
+  margin-top: 8px
+
+.carousel-control-inner
+  background: rgba(136, 136, 136, 0.3)
+  width: 63px
+  height: 45px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.carousel-inner__image
+  height: 600px
+  object-fit: cover
+  +md
+    height: 100%
+    width: 100%
+
+.carousel-control
+  border-radius: 60px
+  overflow: hidden
+  width: 63px
+  height: 45px
+  top: 50%
+  transform: translate(0, -50%)
+  display: none
+  +md
+    display: block
+
+.carousel-control-prev
+  left: 70px
+
+.carousel-control-next
+  right: 70px
+
+// carousel for card  
+
+.cosmetic-items
+  .carousel,
+  .carousel-inner,
+  .carousel-item
+    height: 100%
+
+  .carousel-image
+    object-fit: cover
+
+.carousel-control__buttons
+  background: rgba(136, 136, 136, 0.3)
+  border-radius: 10px
+  width: 72px
+  height: 40px
+  display: flex
+  justify-content: center
+  gap: 18px
+  position: absolute
+  bottom: 30px
+  right: 30px
+
+.carousel-card__title
+  letter-spacing: -0.03em
+  position: absolute
+  bottom: 22px
+  left: 30px

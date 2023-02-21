@@ -1,5 +1,310 @@
-{% extends "../layout/default.twig" %}
+{% extends "../layout/main.twig" %}
 
 {% block page %}
-cool index
+<section class="carousel-hero">
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active carousel-item--relative">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="../images/index/index-1-2x.jpg" />
+          <img class="carousel-inner__image" src="../images/index/index-1.jpg"
+            class="d-block w-100 h-100 carousel-image" alt="..." />
+        </picture>
+        <div class="carousel-item__title">
+          <h2 class="title">Capsule Collection</h2>
+          <div class="carousel-item__line"></div>
+        </div>
+      </div>
+      <div class="carousel-item arousel-item--relative">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="../images/index/carousel-image-2@2x.jpg" />
+          <img class="carousel-inner__image" src="../images/index/carousel-image-2.jpg"
+            class="d-block w-100 h-100 carousel-image" alt="..." />
+        </picture>
+        <div class="carousel-item__title">
+          <h2 class="title">Care Cosmetics</h2>
+          <div class="carousel-item__line"></div>
+        </div>
+      </div>
+      <div class="carousel-item arousel-item--relative">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="../images/index/carousel-image-3@2x.jpg" />
+          <img class="carousel-inner__image" src="../images/index/carousel-image-3.jpg"
+            class="d-block w-100 h-100 carousel-image" alt="..." />
+        </picture>
+        <div class="carousel-item__title">
+          <h2 class="title">Body Cosmetics</h2>
+          <div class="carousel-item__line"></div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev carousel-control" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-inner" aria-hidden="true">
+        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M17.1327 7.86733H3.61472L8.267 12.5196C8.60568 12.8583 8.60568 13.4075 8.26721 13.746C7.92853 14.0847 7.37908 14.0847 7.0404 13.746L0.907833 7.6132C0.867502 7.57287 0.831511 7.52843 0.799854 7.48116C0.785326 7.45926 0.775135 7.43562 0.762558 7.41286C0.748249 7.38597 0.731768 7.36038 0.720276 7.33198C0.707916 7.30271 0.700979 7.27235 0.692307 7.24199C0.68515 7.21793 0.675829 7.19494 0.670841 7.17022C0.659567 7.11385 0.653711 7.05704 0.653711 7.00001L0.653927 6.99806C0.654144 6.9419 0.659782 6.88553 0.670841 6.83024C0.676044 6.80422 0.685801 6.78015 0.69339 6.75456C0.701847 6.72572 0.708351 6.69645 0.72006 6.66848C0.732635 6.63834 0.74955 6.61102 0.765162 6.58262C0.776871 6.56137 0.786192 6.53969 0.799635 6.5193C0.831293 6.47139 0.867722 6.42672 0.908268 6.38617L7.04062 0.254042C7.3793 -0.0846443 7.92853 -0.0846446 8.26721 0.253825C8.6059 0.592511 8.6059 1.14174 8.26721 1.48064L3.61494 6.1327H17.1327C17.6117 6.1327 18 6.52104 18 7.00001C18 7.47899 17.6117 7.86733 17.1327 7.86733Z"
+            fill="white" />
+        </svg>
+      </span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next carousel-control" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-inner" aria-hidden="true">
+        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.867314 7.86733H14.3853L9.733 12.5196C9.39432 12.8583 9.39432 13.4075 9.73279 13.746C10.0715 14.0847 10.6209 14.0847 10.9596 13.746L17.0922 7.6132C17.1325 7.57287 17.1685 7.52843 17.2001 7.48116C17.2147 7.45926 17.2249 7.43562 17.2374 7.41286C17.2518 7.38597 17.2682 7.36038 17.2797 7.33198C17.2921 7.30271 17.299 7.27235 17.3077 7.24199C17.3148 7.21793 17.3242 7.19494 17.3292 7.17022C17.3404 7.11385 17.3463 7.05704 17.3463 7.00001L17.3461 6.99806C17.3459 6.9419 17.3402 6.88553 17.3292 6.83024C17.324 6.80422 17.3142 6.78015 17.3066 6.75456C17.2982 6.72572 17.2916 6.69645 17.2799 6.66848C17.2674 6.63834 17.2505 6.61102 17.2348 6.58262C17.2231 6.56137 17.2138 6.53969 17.2004 6.5193C17.1687 6.47139 17.1323 6.42672 17.0917 6.38617L10.9594 0.254042C10.6207 -0.0846443 10.0715 -0.0846446 9.73279 0.253825C9.3941 0.592511 9.3941 1.14174 9.73279 1.48064L14.3851 6.1327H0.867314C0.38834 6.1327 0 6.52104 0 7.00001C0 7.47899 0.38834 7.86733 0.867314 7.86733Z"
+            fill="white" />
+        </svg>
+      </span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</section>
+
+<div class="container">
+  <div class="cosmetic-items">
+    <div class="category-card">
+      <div id="product-carousel-1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/index/index-2.png" class="d-block w-100 h-100 carousel-image" alt="...">
+            <div class="carousel-card__title">
+              <h2 class="title">Care</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/index/index-3.png" class="d-block w-100 h-100 carousel-image" alt="...">
+            <div class="carousel-card__title">
+              <h2 class="title">Care</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/index/index-4.png" class="d-block w-100 h-100 carousel-image" alt="...">
+            <div class="carousel-card__title">
+              <h2 class="title">Care</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-control__buttons">
+          <button type="button" data-bs-target="#product-carousel-1" data-bs-slide="prev">
+            <span aria-hidden="true">
+              <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.1249 6.74342H2.53805L6.52571 10.7311C6.81602 11.0214 6.81602 11.4922 6.5259 11.7823C6.2356 12.0726 5.76465 12.0726 5.47434 11.7823L0.217859 6.5256C0.18329 6.49104 0.15244 6.45294 0.125305 6.41242C0.112853 6.39365 0.104118 6.37339 0.093339 6.35388C0.0810719 6.33083 0.066946 6.3089 0.0570965 6.28455C0.0465031 6.25946 0.040556 6.23344 0.0331221 6.20742C0.026989 6.18679 0.0189981 6.16709 0.0147238 6.14591C0.00505924 6.09758 4.1008e-05 6.04889 4.1008e-05 6.00001L0.000226021 5.99834C0.000411987 5.9502 0.00524521 5.90188 0.0147238 5.85449C0.0191841 5.83219 0.0275459 5.81156 0.0340509 5.78963C0.0412998 5.76491 0.046875 5.73982 0.0569105 5.71584C0.0676899 5.69001 0.0821877 5.66659 0.0955687 5.64224C0.105605 5.62403 0.113596 5.60545 0.125119 5.58798C0.152253 5.5469 0.183478 5.50862 0.218232 5.47386L5.47453 0.21775C5.76483 -0.0725523 6.2356 -0.0725525 6.5259 0.217564C6.8162 0.507867 6.8162 0.978633 6.5259 1.26912L2.53823 5.2566H14.1249C14.5354 5.2566 14.8683 5.58946 14.8683 6.00001C14.8683 6.41056 14.5354 6.74342 14.1249 6.74342Z"
+                  fill="white" />
+              </svg>
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button type="button" data-bs-target="#product-carousel-1" data-bs-slide="next">
+            <span aria-hidden="true">
+              <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.743412 6.74342H12.3302L8.34257 10.7311C8.05227 11.0214 8.05227 11.4922 8.34239 11.7823C8.63269 12.0726 9.10364 12.0726 9.39394 11.7823L14.6504 6.5256C14.685 6.49104 14.7158 6.45294 14.743 6.41242C14.7554 6.39365 14.7642 6.37339 14.7749 6.35388C14.7872 6.33083 14.8013 6.3089 14.8112 6.28455C14.8218 6.25946 14.8277 6.23344 14.8352 6.20742C14.8413 6.18679 14.8493 6.16709 14.8536 6.14591C14.8632 6.09758 14.8682 6.04889 14.8682 6.00001L14.8681 5.99834C14.8679 5.9502 14.863 5.90188 14.8536 5.85449C14.8491 5.83219 14.8407 5.81156 14.8342 5.78963C14.827 5.76491 14.8214 5.73982 14.8114 5.71584C14.8006 5.69001 14.7861 5.66659 14.7727 5.64224C14.7627 5.62403 14.7547 5.60545 14.7432 5.58798C14.716 5.5469 14.6848 5.50862 14.6501 5.47386L9.39376 0.21775C9.10345 -0.0725523 8.63269 -0.0725525 8.34239 0.217564C8.05208 0.507867 8.05208 0.978633 8.34239 1.26912L12.3301 5.2566H0.743412C0.332863 5.2566 0 5.58946 0 6.00001C0 6.41056 0.332863 6.74342 0.743412 6.74342Z"
+                  fill="white" />
+              </svg>
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card category-card mobile-hidden">
+      <div class="card__image-wrap">
+        <img class="card__image" src="../images/common/bottles.png" alt="">
+      </div>
+      <div class="card__text">
+        <span class="card__product">Perfect brows</span>
+        <span class="card__price">54 €</span>
+      </div>
+    </div>
+
+    <div class="card category-card mobile-hidden">
+      <div class="card__image-wrap">
+        <img class="card__image" src="../images/common/pencil.png" alt="">
+      </div>
+      <div class="card__text">
+        <span class="card__product">Perfect brows</span>
+        <span class="card__price">54 €</span>
+      </div>
+    </div>
+
+    <div class="card category-card mobile-hidden">
+      <div class="card__image-wrap">
+        <img class="card__image" src="../images/common/bottle.png" alt="">
+      </div>
+      <div class="card__text">
+        <span class="card__product">Perfect brows</span>
+        <span class="card__price">54 €</span>
+      </div>
+    </div>
+
+    <div class="card category-card mobile-hidden">
+      <div class="card__image-wrap">
+        <img class="card__image" src="../images/common/bottle.png" alt="">
+      </div>
+      <div class="card__text">
+        <span class="card__product">Perfect brows</span>
+        <span class="card__price">54 €</span>
+      </div>
+    </div>
+
+    <div class="card category-card mobile-hidden">
+      <div class="card__image-wrap">
+        <img class="card__image" src="../images/common/bottles.png" alt="">
+      </div>
+      <div class="card__text">
+        <span class="card__product">Perfect brows</span>
+        <span class="card__price">54 €</span>
+      </div>
+    </div>
+
+    <div class="card category-card mobile-hidden">
+      <div class="card__image-wrap">
+        <img class="card__image" src="../images/common/pencil.png" alt="">
+      </div>
+      <div class="card__text">
+        <span class="card__product">Perfect brows</span>
+        <span class="card__price">54 €</span>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <div id="product-carousel-2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="../images/index/index-2.png" class="d-block w-100 h-100 carousel-image" alt="...">
+            <div class="carousel-card__title">
+              <h2 class="title">Beauty</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/index/index-3.png" class="d-block w-100 h-100 carousel-image" alt="...">
+            <div class="carousel-card__title">
+              <h2 class="title">Beauty</h2>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img src="../images/index/index-4.png" class="d-block w-100 h-100 carousel-image" alt="...">
+            <div class="carousel-card__title">
+              <h2 class="title">Beauty</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-control__buttons">
+          <button type="button" data-bs-target="#product-carousel-2" data-bs-slide="prev">
+            <span aria-hidden="true">
+              <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.1249 6.74342H2.53805L6.52571 10.7311C6.81602 11.0214 6.81602 11.4922 6.5259 11.7823C6.2356 12.0726 5.76465 12.0726 5.47434 11.7823L0.217859 6.5256C0.18329 6.49104 0.15244 6.45294 0.125305 6.41242C0.112853 6.39365 0.104118 6.37339 0.093339 6.35388C0.0810719 6.33083 0.066946 6.3089 0.0570965 6.28455C0.0465031 6.25946 0.040556 6.23344 0.0331221 6.20742C0.026989 6.18679 0.0189981 6.16709 0.0147238 6.14591C0.00505924 6.09758 4.1008e-05 6.04889 4.1008e-05 6.00001L0.000226021 5.99834C0.000411987 5.9502 0.00524521 5.90188 0.0147238 5.85449C0.0191841 5.83219 0.0275459 5.81156 0.0340509 5.78963C0.0412998 5.76491 0.046875 5.73982 0.0569105 5.71584C0.0676899 5.69001 0.0821877 5.66659 0.0955687 5.64224C0.105605 5.62403 0.113596 5.60545 0.125119 5.58798C0.152253 5.5469 0.183478 5.50862 0.218232 5.47386L5.47453 0.21775C5.76483 -0.0725523 6.2356 -0.0725525 6.5259 0.217564C6.8162 0.507867 6.8162 0.978633 6.5259 1.26912L2.53823 5.2566H14.1249C14.5354 5.2566 14.8683 5.58946 14.8683 6.00001C14.8683 6.41056 14.5354 6.74342 14.1249 6.74342Z"
+                  fill="white" />
+              </svg>
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button type="button" data-bs-target="#product-carousel-2" data-bs-slide="next">
+            <span aria-hidden="true">
+              <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.743412 6.74342H12.3302L8.34257 10.7311C8.05227 11.0214 8.05227 11.4922 8.34239 11.7823C8.63269 12.0726 9.10364 12.0726 9.39394 11.7823L14.6504 6.5256C14.685 6.49104 14.7158 6.45294 14.743 6.41242C14.7554 6.39365 14.7642 6.37339 14.7749 6.35388C14.7872 6.33083 14.8013 6.3089 14.8112 6.28455C14.8218 6.25946 14.8277 6.23344 14.8352 6.20742C14.8413 6.18679 14.8493 6.16709 14.8536 6.14591C14.8632 6.09758 14.8682 6.04889 14.8682 6.00001L14.8681 5.99834C14.8679 5.9502 14.863 5.90188 14.8536 5.85449C14.8491 5.83219 14.8407 5.81156 14.8342 5.78963C14.827 5.76491 14.8214 5.73982 14.8114 5.71584C14.8006 5.69001 14.7861 5.66659 14.7727 5.64224C14.7627 5.62403 14.7547 5.60545 14.7432 5.58798C14.716 5.5469 14.6848 5.50862 14.6501 5.47386L9.39376 0.21775C9.10345 -0.0725523 8.63269 -0.0725525 8.34239 0.217564C8.05208 0.507867 8.05208 0.978633 8.34239 1.26912L12.3301 5.2566H0.743412C0.332863 5.2566 0 5.58946 0 6.00001C0 6.41056 0.332863 6.74342 0.743412 6.74342Z"
+                  fill="white" />
+              </svg>
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card category-card mobile-hidden">
+      <div class="card__image-wrap">
+        <img class="card__image" src="../images/common/bottles.png" alt="">
+      </div>
+      <div class="card__text">
+        <span class="card__product">Perfect brows</span>
+        <span class="card__price">54 €</span>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <div id="product-carousel-3" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="../images/index/index-2.png" class="d-block w-100 h-100 carousel-image" alt="...">
+            <div class="carousel-card__title">
+              <h2 class="title">Brows</h2>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img src="../images/index/index-3.png" class="d-block w-100 h-100 carousel-image" alt="...">
+            <div class="carousel-card__title">
+              <h2 class="title">Brows</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/index/index-4.png" class="d-block w-100 h-100 carousel-image" alt="...">
+            <div class="carousel-card__title">
+              <h2 class="title">Brows</h2>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-control__buttons">
+          <button type="button" data-bs-target="#product-carousel-3" data-bs-slide="prev">
+            <span aria-hidden="true">
+              <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.1249 6.74342H2.53805L6.52571 10.7311C6.81602 11.0214 6.81602 11.4922 6.5259 11.7823C6.2356 12.0726 5.76465 12.0726 5.47434 11.7823L0.217859 6.5256C0.18329 6.49104 0.15244 6.45294 0.125305 6.41242C0.112853 6.39365 0.104118 6.37339 0.093339 6.35388C0.0810719 6.33083 0.066946 6.3089 0.0570965 6.28455C0.0465031 6.25946 0.040556 6.23344 0.0331221 6.20742C0.026989 6.18679 0.0189981 6.16709 0.0147238 6.14591C0.00505924 6.09758 4.1008e-05 6.04889 4.1008e-05 6.00001L0.000226021 5.99834C0.000411987 5.9502 0.00524521 5.90188 0.0147238 5.85449C0.0191841 5.83219 0.0275459 5.81156 0.0340509 5.78963C0.0412998 5.76491 0.046875 5.73982 0.0569105 5.71584C0.0676899 5.69001 0.0821877 5.66659 0.0955687 5.64224C0.105605 5.62403 0.113596 5.60545 0.125119 5.58798C0.152253 5.5469 0.183478 5.50862 0.218232 5.47386L5.47453 0.21775C5.76483 -0.0725523 6.2356 -0.0725525 6.5259 0.217564C6.8162 0.507867 6.8162 0.978633 6.5259 1.26912L2.53823 5.2566H14.1249C14.5354 5.2566 14.8683 5.58946 14.8683 6.00001C14.8683 6.41056 14.5354 6.74342 14.1249 6.74342Z"
+                  fill="white" />
+              </svg>
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button type="button" data-bs-target="#product-carousel-3" data-bs-slide="next">
+            <span aria-hidden="true">
+              <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.743412 6.74342H12.3302L8.34257 10.7311C8.05227 11.0214 8.05227 11.4922 8.34239 11.7823C8.63269 12.0726 9.10364 12.0726 9.39394 11.7823L14.6504 6.5256C14.685 6.49104 14.7158 6.45294 14.743 6.41242C14.7554 6.39365 14.7642 6.37339 14.7749 6.35388C14.7872 6.33083 14.8013 6.3089 14.8112 6.28455C14.8218 6.25946 14.8277 6.23344 14.8352 6.20742C14.8413 6.18679 14.8493 6.16709 14.8536 6.14591C14.8632 6.09758 14.8682 6.04889 14.8682 6.00001L14.8681 5.99834C14.8679 5.9502 14.863 5.90188 14.8536 5.85449C14.8491 5.83219 14.8407 5.81156 14.8342 5.78963C14.827 5.76491 14.8214 5.73982 14.8114 5.71584C14.8006 5.69001 14.7861 5.66659 14.7727 5.64224C14.7627 5.62403 14.7547 5.60545 14.7432 5.58798C14.716 5.5469 14.6848 5.50862 14.6501 5.47386L9.39376 0.21775C9.10345 -0.0725523 8.63269 -0.0725525 8.34239 0.217564C8.05208 0.507867 8.05208 0.978633 8.34239 1.26912L12.3301 5.2566H0.743412C0.332863 5.2566 0 5.58946 0 6.00001C0 6.41056 0.332863 6.74342 0.743412 6.74342Z"
+                  fill="white" />
+              </svg>
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card category-card mobile-hidden">
+      <div class="card__image-wrap">
+        <img class="card__image" src="../images/common/pencil.png" alt="">
+      </div>
+      <div class="card__text">
+        <span class="card__product">Perfect brows</span>
+        <span class="card__price">54 €</span>
+      </div>
+    </div>
+
+    <div class="card category-card mobile-hidden">
+      <div class="card__image-wrap">
+        <img class="card__image" src="../images/common/bottle.png" alt="">
+      </div>
+      <div class="card__text">
+        <span class="card__product">Perfect brows</span>
+        <span class="card__price">54 €</span>
+      </div>
+    </div>
+
+  </div>
+</div>
 {% endblock %}

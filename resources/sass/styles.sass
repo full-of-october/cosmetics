@@ -174,4 +174,75 @@
 
 // galery start  
 
-.galery__title
+.gallery
+
+  &__description
+    display: block
+    margin-bottom: 50px
+    +lg
+      margin-bottom: 100px
+
+    +lg
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+
+  &__title
+    font-weight: 300
+    font-size: 30px
+    line-height: 130%
+    letter-spacing: -0.02em
+    max-width: 600px
+    margin: 0 auto
+    +lg
+      font-size: 48px
+      margin: 0
+
+  &__link
+    display: block
+    background: #EEE4DA
+    border-radius: 66px
+    max-width: 345px
+    min-width: 310px
+    height: 80px
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 10px
+
+    &:hover
+      background: #E7D2BD
+
+    &--position
+      margin: 30px auto
+      +lg
+        margin: 0
+
+  &__pics
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -10px
+
+    &--position
+      margin-bottom: 100px
+
+  &__image
+    border-radius: 6px
+
+  &__item
+    padding: 0 10px
+    margin-bottom: 20px
+
+    flex: 1 1 calc(50%)
+    max-width: calc(50%)
+
+    +sm
+      flex: 1 1 calc(33.333%)
+      max-width: calc(33.333%)
+    +lg
+      flex: 1 1 calc(25%)
+      max-width: calc(25%)
+
+.fancybox__content
+  border-radius: 10px
+  overflow: hidden

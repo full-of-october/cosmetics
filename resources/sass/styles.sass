@@ -246,3 +246,198 @@
 .fancybox__content
   border-radius: 10px
   overflow: hidden
+
+// product card start  
+
+.like-button
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 12px
+
+  &__text
+    display: inline-block
+    letter-spacing: -0.03em
+    font-size: 14px
+
+    &:hover
+      opacity: 0.7
+
+.product-card
+  margin-bottom: 70px
+
+  +md
+    justify-content: start
+    gap: 50px
+  +lg
+    justify-content: space-between
+    gap: 10px
+
+  &__title
+    margin: 32px 0
+    text-align: start
+
+  &__price-items
+    display: flex
+    align-items: center
+    gap: 115px
+    +lg
+      gap: 180px
+
+.product-card-like-button
+  max-width: 130px
+  margin-top: 50px
+  +md
+    margin-top: 0
+
+.price-items-wrap
+  background: #EEE4DA
+  border-radius: 66px
+  display: flex
+  justify-content: center
+  gap: 30px
+  width: 165px
+  height: 46px
+
+.price-items-sum
+  width: 30px
+  background: none
+  border: none
+  font-size: 20px
+  text-align: center
+  color: #555555
+
+.price-items__text
+  font-size: 32px
+  letter-spacing: -0.02em
+
+.button-minus, .button-plus
+  font-weight: 300
+  font-size: 24px
+
+.button-minus--opacity
+  opacity: 0.3
+
+.cart-button
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 14px
+  background: #EEE4DA
+  border-radius: 76px
+
+  &__text
+    font-size: 16px
+    letter-spacing: -0.02em
+
+.product-card-cart-button
+  width: 345px
+  height: 80px
+  margin: 30px 0 50px
+  transition: all 0.1s ease-in-out
+
+  &:hover
+    background: #E7D2BD
+  +lg
+    width: 407px
+
+.nav-pills .nav-link.active
+  background: #EEE4DA
+  color: #555555
+  opacity: 1
+  border-radius: 56px
+
+.product-card__tabs-button
+  opacity: 0.5
+  font-size: 16px
+  letter-spacing: -0.02em
+
+.product-card__tabs
+  display: flex
+  gap: 20px
+  margin-bottom: 20px
+
+.product-card__tabs-content
+  font-size: 14px
+  line-height: 170%
+  letter-spacing: -0.02em
+  text-align: start
+
+.product-card__tabs-wrap
+  max-width: 405px
+
+// recommendations start  
+
+.recommendations
+
+  &--position
+    margin-bottom: 90px
+  +lg
+    margin-bottom: 115px
+
+  &__description--position
+    margin-bottom: 50px
+    position: relative
+    +lg
+      margin-bottom: 75px
+
+.recommendations__text
+  font-weight: 300
+  font-size: 30px
+  line-height: 130%
+  letter-spacing: -0.02em
+  width: 345px
+  +lg
+    font-size: 48px
+    width: 600px
+
+.recommendations__gallery
+  margin: 0 -10px
+
+.recommendations .category-card
+  max-width: none
+
+.slick-slide
+  padding: 0 10px
+
+.recommendations__gallery .slick-prev:before
+  display: none
+  content: " "
+  position: absolute
+  background: url("/images/icons/arrow-left.png")
+  width: 50px
+  height: 40px
+  padding: 14px 12px
+  background-repeat: no-repeat
+  background-color: #EEE4DA
+  border-radius: 10px
+  background-position: center
+  +md
+    left: 660px
+    bottom: 217px
+    display: block
+  +lg
+    left: 903px
+  +xl
+    left: 1256px
+    bottom: 284px
+
+.recommendations__gallery .slick-next:before
+  display: none
+  content: " "
+  position: absolute
+  bottom: 248px
+  right: 35px
+  background: url("/images/icons/arrow-right.png")
+  width: 50px
+  height: 40px
+  padding: 14px 12px
+  background-repeat: no-repeat
+  background-color: #EEE4DA
+  border-radius: 10px
+  background-position: center
+  +md
+    display: block
+    bottom: 217px
+  +xl
+    bottom: 284px

@@ -12,6 +12,12 @@
     +md
       min-height: auto
 
+  .nav-item
+    +lg
+      opacity: 0
+    +max(992)
+      margin-bottom: 10px
+
 .navbar--mobile
   background: #F5ECE3
 
@@ -67,12 +73,6 @@
 .navbar-wrap
   +max(992)
     margin-top: 40px
-
-.nav-item
-  +lg
-    opacity: 0
-  +max(992)
-    margin-bottom: 10px
 
 .nav-link--active
   color: #AC8F78

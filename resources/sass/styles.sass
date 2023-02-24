@@ -320,34 +320,15 @@
 .button-minus--opacity
   opacity: 0.3
 
-.cart-button
-  display: flex
-  align-items: center
-  justify-content: center
-  gap: 14px
-  background: #EEE4DA
-  border-radius: 76px
-
-  &__text
-    font-size: 16px
-    letter-spacing: -0.02em
-
-.product-card-cart-button
-  width: 345px
-  height: 80px
-  margin: 30px 0 50px
-  transition: all 0.1s ease-in-out
-
-  &:hover
-    background: #E7D2BD
-  +lg
-    width: 407px
-
 .nav-pills .nav-link.active
   background: #EEE4DA
   color: #555555
   opacity: 1
   border-radius: 56px
+
+.product-card__button
+  width: 100%
+  margin: 30px 0 50px
 
 .product-card__tabs-button
   opacity: 0.5
@@ -383,6 +364,43 @@
     +lg
       margin-bottom: 75px
 
+  .slick-slide
+    padding: 0 10px
+
+  .slick-next,
+  .slick-prev
+    display: none
+    position: absolute
+    width: 50px
+    height: 40px
+    padding: 14px 12px
+    transition: all 0.3s ease
+    top: -90px
+    &:hover
+      opacity: 0.7
+    &:before
+      content: " "
+
+    +md
+      display: block
+
+  .slick-prev
+    background: #EEE4DA url("/images/icons/arrow-left.png") center no-repeat
+    right: 60px
+    left: initial
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+    &:hover, &:focus
+      background: #EEE4DA url("/images/icons/arrow-left.png") center no-repeat
+
+  .slick-next
+    background: #EEE4DA url("/images/icons/arrow-right.png") center no-repeat
+    right: 10px
+    border-top-right-radius: 10px
+    border-bottom-right-radius: 10px
+    &:hover, &:focus
+      background: #EEE4DA url("/images/icons/arrow-right.png") center no-repeat
+
 .recommendations__text
   font-weight: 300
   font-size: 30px
@@ -398,51 +416,6 @@
 
 .recommendations .category-card
   max-width: none
-
-.slick-slide
-  padding: 0 10px
-
-.recommendations__gallery .slick-prev:before
-  display: none
-  content: " "
-  position: absolute
-  background: url("/images/icons/arrow-left.png")
-  width: 50px
-  height: 40px
-  padding: 14px 12px
-  background-repeat: no-repeat
-  background-color: #EEE4DA
-  border-radius: 10px
-  background-position: center
-  +md
-    left: 660px
-    bottom: 217px
-    display: block
-  +lg
-    left: 903px
-  +xl
-    left: 1256px
-    bottom: 284px
-
-.recommendations__gallery .slick-next:before
-  display: none
-  content: " "
-  position: absolute
-  bottom: 248px
-  right: 35px
-  background: url("/images/icons/arrow-right.png")
-  width: 50px
-  height: 40px
-  padding: 14px 12px
-  background-repeat: no-repeat
-  background-color: #EEE4DA
-  border-radius: 10px
-  background-position: center
-  +md
-    display: block
-    bottom: 217px
-  +xl
-    bottom: 284px
 
 // about company page start  
 
@@ -519,3 +492,27 @@
   margin: 30px 0 70px
   +md
     margin: 42px 0 140px
+
+.twink-slider
+  background: #EEE4DA
+  padding-bottom: 50px
+  max-width: 1024px
+  .info-image
+    max-width: 300px
+    height: 300px
+    object-fit: contain
+    margin: 0 auto
+    +md
+      max-width: 400px
+      height: 550px
+    +lg
+      max-width: 500px
+      height: 650px
+
+  .thumb-slider
+    max-width: 280px
+    margin: 0 auto
+
+  .thumb-slide
+    img
+      margin: 0 auto

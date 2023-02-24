@@ -9,13 +9,29 @@ if (btn && headerMain) {
   })
 }
 
-$('.js-recommendations-gallery').slick({
-  
+$('.js-product-big').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.js-product-thumb'
+});
+
+$('.js-product-thumb').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: false,
+  asNavFor: '.js-product-big',
+  dots: false,
+  arrows: false,
+  focusOnSelect: true
+});
+
+$('.js-recommendations-gallery').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
   customPaging: 20,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 5000,
   responsive: [
     {
       breakpoint: 1024,
@@ -27,6 +43,7 @@ $('.js-recommendations-gallery').slick({
     {
       breakpoint: 600,
       settings: {
+        arrows: true,
         slidesToShow: 2,
         slidesToScroll: 2
       }
@@ -34,6 +51,7 @@ $('.js-recommendations-gallery').slick({
     {
       breakpoint: 480,
       settings: {
+        arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1
       }

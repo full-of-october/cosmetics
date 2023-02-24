@@ -53,6 +53,24 @@
     &--dark
       background: #EEE4DA
 
+.button
+  min-width: 310px
+  height: 80px
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 14px
+  background: #EEE4DA
+  border-radius: 76px
+  transition: all 0.1s ease-in-out
+
+  &__text
+    font-size: 16px
+    letter-spacing: -0.02em
+
+  &:hover
+    background: #E7D2BD
+
 .card
   background: #EEE4DA
   border-radius: 6px
@@ -135,7 +153,7 @@
       width: 50%
 
   &__description-inner
-    max-width: 490px
+    max-width: 410px
     margin: 0 auto
     +sm
       text-align: center
@@ -183,7 +201,7 @@
 
 // brand-info end  
 
-  // owner card
+// owner card
 
 .owner-card
   background: #EEE4DA
@@ -223,3 +241,5 @@
     display: none
     +sm
       display: block
+
+// ____________________  

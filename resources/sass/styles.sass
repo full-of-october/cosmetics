@@ -349,6 +349,30 @@
 .product-card__tabs-wrap
   max-width: 405px
 
+.twink-slider
+  background: #EEE4DA
+  padding-bottom: 50px
+  max-width: 1024px
+  .info-image
+    max-width: 300px
+    height: 300px
+    object-fit: contain
+    margin: 0 auto
+    +md
+      max-width: 400px
+      height: 550px
+    +lg
+      max-width: 500px
+      height: 650px
+
+  .thumb-slider
+    max-width: 280px
+    margin: 0 auto
+
+  .thumb-slide
+    img
+      margin: 0 auto
+
 // recommendations start  
 
 .recommendations
@@ -440,10 +464,8 @@
     font-size: 16px
     line-height: 180%
     letter-spacing: -0.02em
-    margin-bottom: 40px
     +lg
       font-size: 20px
-      margin-bottom: 56px
 
   &__image
     border-radius: 6px
@@ -493,26 +515,16 @@
   +md
     margin: 42px 0 140px
 
-.twink-slider
-  background: #EEE4DA
-  padding-bottom: 50px
-  max-width: 1024px
-  .info-image
-    max-width: 300px
-    height: 300px
-    object-fit: contain
-    margin: 0 auto
-    +md
-      max-width: 400px
-      height: 550px
-    +lg
-      max-width: 500px
-      height: 650px
+.working-process-owner-card
+  margin: 50px 0
+  +lg
+    margin: 42px 0 70px
 
-  .thumb-slider
-    max-width: 280px
-    margin: 0 auto
+.working-process__video
+  margin: 50px 0
+  max-width: 810px
+  height: 420px
 
-  .thumb-slide
-    img
-      margin: 0 auto
+.iframe-video
+  width: 100%
+  height: 100%

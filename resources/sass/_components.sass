@@ -5,6 +5,11 @@
   +max(500)
     display: none
 
+.center-content
+  max-width: 825px
+  padding: 0 15px
+  margin: 0 auto
+
 .title
   font-size: 36px
   font-weight: 400
@@ -177,3 +182,44 @@
     height: auto
 
 // brand-info end  
+
+  // owner card
+
+.owner-card
+  background: #EEE4DA
+  padding: 25px 25px 50px
+  max-width: 810px
+  border-radius: 6px
+  +md
+    padding: 55px 55px 60px
+
+  &__title
+    font-weight: 300
+    font-size: 27px
+    line-height: 150%
+    letter-spacing: -0.03em
+    +md
+      font-size: 27px
+
+  &__text
+    font-size: 16px
+    line-height: 180%
+    letter-spacing: -0.02em
+    margin-bottom: 35px
+    +md
+      font-size: 16px
+
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__profile
+    display: flex
+    align-items: center
+    gap: 25px
+
+  &__photo
+    display: none
+    +sm
+      display: block

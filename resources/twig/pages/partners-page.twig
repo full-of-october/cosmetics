@@ -1,0 +1,77 @@
+{% extends "../layout/default.twig" %}
+
+{% block page %}
+<div class="center-content">
+  <section class="about">
+    <a class="back-button" href="#">
+      <div>
+        <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.1248 6.74342H2.53793L6.52559 10.7311C6.81589 11.0214 6.81589 11.4922 6.52578 11.7823C6.23547 12.0726 5.76452 12.0726 5.47422 11.7823L0.217736 6.5256C0.183167 6.49104 0.152316 6.45294 0.125182 6.41242C0.11273 6.39365 0.103994 6.37339 0.093215 6.35388C0.0809488 6.33083 0.066823 6.3089 0.0569725 6.28455C0.0463791 6.25946 0.0404329 6.23344 0.0329981 6.20742C0.026865 6.18679 0.0188742 6.16709 0.0145998 6.14591C0.00493526 6.09758 -8.29697e-05 6.04889 -8.29697e-05 6.00001L0.000102043 5.99834C0.00028801 5.9502 0.00512123 5.90188 0.0145998 5.85449C0.0190601 5.83219 0.0274229 5.81156 0.0339279 5.78963C0.0411758 5.76491 0.046751 5.73982 0.0567875 5.71584C0.0675669 5.69001 0.0820637 5.66659 0.0954456 5.64224C0.105481 5.62403 0.113472 5.60545 0.124995 5.58798C0.15213 5.5469 0.183354 5.50862 0.218109 5.47386L5.47441 0.21775C5.76471 -0.0725523 6.23547 -0.0725525 6.52578 0.217564C6.81608 0.507867 6.81608 0.978633 6.52578 1.26912L2.53811 5.2566H14.1248C14.5353 5.2566 14.8682 5.58946 14.8682 6.00001C14.8682 6.41056 14.5353 6.74342 14.1248 6.74342Z"
+            fill="#555555" />
+        </svg>
+      </div>
+      <span class="back-button__text">To back page</span>
+    </a>
+    <h2 class="title about-title">Partnership information</h2>
+    <div class="about__image-wrap">
+      <picture>
+        <source media="(min-width: 500px)" srcset="../images/about-company/abou1-big.jpg" />
+        <img class="about__image" src="../images/about-company/abou1.jpg" alt="" />
+      </picture>
+    </div>
+    <p class="about__text">The brand seeks to build respect among the audience for its products, so that the presence of
+      the company's products is a sign of prestige, since the focus of the business is focused on exclusive sales, but
+      not on the mass market. The brand seeks to build respect among the audience for its products, so that the presence
+      of the company's products is a sign of prestige, since the focus of the business is focused on exclusive sales,
+      but not on the mass market.
+    </p>
+
+    <div class="partnership-button-wrap">
+      <button class="button partnership-button">
+        <span class="button__text">Become a partner</span>
+        <div>
+          <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.495608 4.49562H8.22016L5.56172 7.15406C5.36818 7.34759 5.36818 7.66144 5.56159 7.85485C5.75513 8.04838 6.0691 8.04838 6.26263 7.85485L9.76695 4.3504C9.79 4.32736 9.81057 4.30196 9.82866 4.27495C9.83696 4.26243 9.84278 4.24893 9.84997 4.23592C9.85814 4.22055 9.86756 4.20593 9.87413 4.1897C9.88119 4.17297 9.88516 4.15563 9.89011 4.13828C9.8942 4.12453 9.89953 4.1114 9.90238 4.09727C9.90882 4.06506 9.91217 4.03259 9.91217 4.00001L9.91204 3.99889C9.91192 3.9668 9.9087 3.93459 9.90238 3.90299C9.8994 3.88812 9.89383 3.87437 9.88949 3.85975C9.88466 3.84327 9.88094 3.82655 9.87425 3.81056C9.86707 3.79334 9.8574 3.77773 9.84848 3.7615C9.84179 3.74935 9.83646 3.73696 9.82878 3.72532C9.81069 3.69793 9.78987 3.67241 9.7667 3.64924L6.26251 0.145167C6.06897 -0.0483682 5.75513 -0.0483684 5.56159 0.145043C5.36806 0.338578 5.36806 0.652422 5.56159 0.846081L8.22004 3.5044H0.495608C0.221909 3.5044 0 3.72631 0 4.00001C0 4.27371 0.221909 4.49562 0.495608 4.49562Z"
+              fill="#555555" />
+          </svg>
+        </div>
+      </button>
+    </div>
+
+  </section>
+
+  <section class="owner-card-wrap">
+    <h3 class="owner-card__title">Each Boltaeva brand product is truly unique - everything is thought out to the
+      smallest
+      detail.
+    </h3>
+
+    <div class="owner-card about-owner-card">
+      <p class="owner-card__text">The brand seeks to build respect among the audience for its products, so that the
+        presence
+        of the company's
+        products is a sign of prestige, since the focus of the business is focused on exclusive sales, but not on the
+        mass market.
+      </p>
+      <div class="owner-card__inner">
+        <div class="owner-card__profile">
+          <div class="owner-card__photo">
+            <img src="../images/common/owner.png" alt="">
+          </div>
+          <div>
+            <p class="owner-name">Zara Boltaeva</p>
+            <p class="owner-work">CEO, Founder</p>
+          </div>
+        </div>
+
+        <div class="signature">
+          <img src="../images/common/signature.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+{% endblock %}

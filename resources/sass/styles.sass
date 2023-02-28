@@ -53,11 +53,11 @@
   +lg
     margin-left: 70px
 
-.category-hero__title
+.hero__title
   text-align: center
   margin-bottom: 30px
 
-.category-hero__image
+.hero__image
   height: 350px
   object-fit: cover
   +lg
@@ -580,3 +580,103 @@
   margin: 50px auto
   +lg
     margin: 30px auto 70px
+
+// contacts-page start    
+
+.contacts-hero
+  margin-top: 50px
+  +sm
+    margin-top: 100px
+  &__image
+    margin: 0 auto
+
+.contacts
+  margin: 50px 0 80px
+
+  &__items
+    display: grid
+    grid-template-columns: 1fr
+    gap: 15px
+
+    +md
+      grid-template-columns: 1fr 1fr
+    +xl
+      grid-template-columns: 1fr 1fr 1fr 1fr
+
+  &__info
+    background: #EEE4DA
+    border-radius: 6px
+    padding: 24px 40px
+    +md
+    padding: 44px 40px
+
+  &-info-text
+    display: block
+    margin-bottom: 11px
+
+  &__map
+    margin-top: 50px
+    max-width: 1300px
+    height: 500px
+
+  &-socials
+    margin: 30px 0 50px
+    +lg
+      margin: 0
+
+  &-button-wrap
+    margin-top: 55px
+    margin-bottom: 70px
+    +md
+      margin-bottom: 0
+
+  &-button
+    width: 100%
+
+.info-text
+  font-size: 16px
+  line-height: 110%
+  opacity: 0.3
+
+.info-link
+  font-size: 21px
+  line-height: 110%
+  &:hover
+    opacity: 0.7
+
+.iframe-map
+  width: 100%
+  height: 100%
+  border-radius: 6px
+
+.contacts-decription-logo
+  margin-bottom: 50px
+  +md
+    margin-bottom: 70px
+
+.contacts-leave
+  &__form
+    margin-top: 30px
+
+  &__label
+    font-size: 13px
+    line-height: 110%
+    color: #AC8F78
+    margin-bottom: 15px
+
+  &__input
+    font-size: 20px
+    line-height: 110%
+    background: none
+    border: none
+    border-radius: 1px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+    padding: 0 0 24px 0
+    &::placeholder
+      color: #555555
+
+    &:focus
+      background: none
+      color: #555555
+      box-shadow: none
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2)

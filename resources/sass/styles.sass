@@ -680,3 +680,62 @@
       color: #555555
       box-shadow: none
       border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+
+// order-page start      
+
+.order
+  padding: 60px 15px 53px
+  +lg
+    padding: 100px 15px 80px
+
+  &__info
+    margin-top: 70px
+    +lg
+      margin-top: 0
+
+  &-info-text
+    margin: 32px 0 50px
+    +lg
+      margin: 54px 0 62px
+
+.sign-in-button
+  display: flex
+  align-items: center
+  gap: 12px
+
+  &__text
+    font-size: 16px
+    line-height: 120%
+    letter-spacing: -0.02em
+    color: #AC8F78
+
+.order-sign-in-button
+  margin-top: 18px
+
+.order-form-select
+  background: #EEE4DA url("/images/icons/arrow-down.png") right 0.75rem center no-repeat
+  border-radius: 6px
+  border: none
+  font-size: 16px
+  line-height: 180%
+  padding: 13px 22px
+
+  &:focus
+    border: none
+    box-shadow: none
+    opacity: 1
+
+  &--active
+    color: #555555
+    opacity: 0.5
+
+.form-select__item
+  font-size: 16px
+  line-height: 180%
+  color: #555555
+
+.order-item-text
+  display: inline-flex
+  margin-top: 10px
+  +lg
+    margin-top: 20px

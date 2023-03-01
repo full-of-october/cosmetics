@@ -4,80 +4,172 @@
 
 <div class="order">
 
-  <div class="order__form">
-    <h2 class="title">Checkout</h2>
-    <div class="contacts-leave">
-      <div class="contacts-leave__form">
-        <label for="formGroupExampleInput" class="contacts-leave__label">Surname, name and patronymic</label>
-        <input type="text" class="form-control contacts-leave__input" id="formGroupExampleInput"
-          placeholder="Rosa More|">
-      </div>
-      <div class="contacts-leave__form">
-        <label for="formGroupExampleInput4" class="contacts-leave__label">Country, city, address</label>
-        <input type="text" class="form-control contacts-leave__input" id="formGroupExampleInput4"
-          placeholder="UAE, Dubai, 54 st. 560 of.">
-      </div>
-      <div class="contacts-leave__form">
-        <label for="formGroupExampleInput2" class="contacts-leave__label">Contact number</label>
-        <input type="text" class="form-control contacts-leave__input" id="formGroupExampleInput2"
-          placeholder="+1 (901) 650 - 45 - 50">
-      </div>
-      <div class="contacts-leave__form">
-        <label for="formGroupExampleInput3" class="contacts-leave__label">Email</label>
-        <input type="text" class="form-control contacts-leave__input" id="formGroupExampleInput3"
-          placeholder="Rosamorena@gmail.com">
+  <div class="order-form">
+    <div class="order-inner">
+      <h2 class="title">Checkout</h2>
+      <div class="contacts-leave">
+        <div class="contacts-leave__form">
+          <label for="formGroupExampleInput" class="contacts-leave__label">Surname, name and patronymic</label>
+          <input type="text" class="form-control contacts-leave__input" id="formGroupExampleInput"
+            placeholder="Rosa More|">
+        </div>
+        <div class="contacts-leave__form">
+          <label for="formGroupExampleInput4" class="contacts-leave__label">Country, city, address</label>
+          <input type="text" class="form-control contacts-leave__input" id="formGroupExampleInput4"
+            placeholder="UAE, Dubai, 54 st. 560 of.">
+        </div>
+        <div class="contacts-leave__form">
+          <label for="formGroupExampleInput2" class="contacts-leave__label">Contact number</label>
+          <input type="text" class="form-control contacts-leave__input" id="formGroupExampleInput2"
+            placeholder="+1 (901) 650 - 45 - 50">
+        </div>
+        <div class="contacts-leave__form">
+          <label for="formGroupExampleInput3" class="contacts-leave__label">Email</label>
+          <input type="text" class="form-control contacts-leave__input" id="formGroupExampleInput3"
+            placeholder="Rosamorena@gmail.com">
+        </div>
       </div>
     </div>
 
   </div>
 
-  <div class="order__info">
-    <button class="like-button order-like-button">
-      <div>
-        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M8.25478 13.3387C5.22728 10.8757 3.34676 9.24139 2.21711 7.88178C1.10823 6.54716 0.75 5.51015 0.75 4.21985C0.75 2.15407 2.43264 0.499756 4.47009 0.499756C6.18637 0.499756 7.1641 1.45978 7.87943 2.27265L8.25478 2.69919L8.63014 2.27265C9.34547 1.45978 10.3232 0.499756 12.0395 0.499756C14.1053 0.499756 15.7596 2.1824 15.7596 4.21985C15.7596 5.51015 15.4013 6.54716 14.2925 7.88178C13.1628 9.24139 11.2823 10.8757 8.25478 13.3387Z"
-            stroke="#555555" />
-        </svg>
-      </div>
-      <span class="like-button__text">Add all products to favorites</span>
-    </button>
-    <div class="order-info-text">
-      <p class="item-title item-title--weight">Set up in a couple of minutes</p>
-      <span class="item-text">If you are already registered on the site, then you just need to enter your profile so as
-        not to enter
-        information again.
-      </span>
-      <button class="sign-in-button order-sign-in-button">
+  <div class="order-info">
+    <div class="order-inner">
+      <button class="like-button order-like-button">
         <div>
-          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M12.9739 9.1246C12.9094 9.06051 12.8328 9.00975 12.7486 8.97524C12.6645 8.94073 12.5743 8.92313 12.4834 8.92345C12.3924 8.92377 12.3024 8.94201 12.2185 8.97711C12.1346 9.01222 12.0584 9.06351 11.9943 9.12806C11.9302 9.19261 11.8794 9.26916 11.8449 9.35332C11.8104 9.43749 11.7928 9.52762 11.7931 9.61859C11.7935 9.70956 11.8117 9.79957 11.8468 9.88349C11.8819 9.9674 11.9332 10.0436 11.9978 10.1077C12.5836 10.6873 13.0486 11.3773 13.3659 12.1379C13.6832 12.8984 13.8464 13.7144 13.8462 14.5385C13.8462 15.3831 11.4162 16.6154 7.61544 16.6154C3.81466 16.6154 1.38466 15.3831 1.38466 14.5385C1.38356 13.7198 1.5438 12.909 1.85622 12.1523C2.16864 11.3956 2.62711 10.7079 3.20543 10.1285C3.33438 9.99874 3.40675 9.82327 3.40675 9.64037C3.40675 9.45747 3.33438 9.28201 3.20543 9.1523C3.07572 9.02335 2.90025 8.95098 2.71735 8.95098C2.53446 8.95098 2.35899 9.02335 2.22928 9.1523C1.51973 9.85787 0.957321 10.6973 0.574652 11.6219C0.191984 12.5465 -0.00332801 13.5378 4.29009e-05 14.5385C4.29009e-05 16.7885 3.92543 18 7.61544 18C11.3054 18 15.2308 16.7885 15.2308 14.5385C15.2335 13.5313 15.0353 12.5338 14.6477 11.6042C14.2602 10.6746 13.6912 9.83162 12.9739 9.1246Z"
-              fill="#AC8F78" />
-            <path
-              d="M7.61541 9.69232C8.57389 9.69232 9.51084 9.4081 10.3078 8.8756C11.1047 8.34309 11.7259 7.58623 12.0927 6.70071C12.4595 5.81519 12.5554 4.84079 12.3685 3.90072C12.1815 2.96066 11.7199 2.09716 11.0422 1.41941C10.3644 0.741662 9.50091 0.28011 8.56085 0.0931198C7.62078 -0.0938704 6.64638 0.00209977 5.76086 0.368894C4.87534 0.735689 4.11847 1.35683 3.58597 2.15378C3.05347 2.95073 2.76925 3.88768 2.76925 4.84616C2.76925 6.13144 3.27982 7.36408 4.18865 8.27292C5.09749 9.18175 6.33012 9.69232 7.61541 9.69232ZM7.61541 1.38462C8.30004 1.38462 8.96929 1.58764 9.53854 1.96799C10.1078 2.34835 10.5515 2.88897 10.8135 3.52149C11.0755 4.154 11.144 4.85 11.0104 5.52148C10.8769 6.19295 10.5472 6.80974 10.0631 7.29384C9.57898 7.77795 8.96219 8.10763 8.29072 8.24119C7.61925 8.37476 6.92325 8.30621 6.29073 8.04421C5.65822 7.78222 5.1176 7.33854 4.73724 6.76929C4.35688 6.20005 4.15386 5.53079 4.15386 4.84616C4.15386 3.9281 4.51856 3.04765 5.16773 2.39848C5.81689 1.74932 6.69735 1.38462 7.61541 1.38462Z"
-              fill="#AC8F78" />
+              d="M8.25478 13.3387C5.22728 10.8757 3.34676 9.24139 2.21711 7.88178C1.10823 6.54716 0.75 5.51015 0.75 4.21985C0.75 2.15407 2.43264 0.499756 4.47009 0.499756C6.18637 0.499756 7.1641 1.45978 7.87943 2.27265L8.25478 2.69919L8.63014 2.27265C9.34547 1.45978 10.3232 0.499756 12.0395 0.499756C14.1053 0.499756 15.7596 2.1824 15.7596 4.21985C15.7596 5.51015 15.4013 6.54716 14.2925 7.88178C13.1628 9.24139 11.2823 10.8757 8.25478 13.3387Z"
+              stroke="#555555" />
           </svg>
         </div>
-        <span class="sign-in-button__text">Sign in</span>
+        <span class="like-button__text">Add all products to favorites</span>
       </button>
+      <div class="order-info-text">
+        <p class="item-title item-title--weight">Set up in a couple of minutes</p>
+        <span class="item-text">If you are already registered on the site, then you just need to enter your profile so
+          as
+          not to enter
+          information again.
+        </span>
+        <button class="sign-in-button order-sign-in-button">
+          <div>
+            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.9739 9.1246C12.9094 9.06051 12.8328 9.00975 12.7486 8.97524C12.6645 8.94073 12.5743 8.92313 12.4834 8.92345C12.3924 8.92377 12.3024 8.94201 12.2185 8.97711C12.1346 9.01222 12.0584 9.06351 11.9943 9.12806C11.9302 9.19261 11.8794 9.26916 11.8449 9.35332C11.8104 9.43749 11.7928 9.52762 11.7931 9.61859C11.7935 9.70956 11.8117 9.79957 11.8468 9.88349C11.8819 9.9674 11.9332 10.0436 11.9978 10.1077C12.5836 10.6873 13.0486 11.3773 13.3659 12.1379C13.6832 12.8984 13.8464 13.7144 13.8462 14.5385C13.8462 15.3831 11.4162 16.6154 7.61544 16.6154C3.81466 16.6154 1.38466 15.3831 1.38466 14.5385C1.38356 13.7198 1.5438 12.909 1.85622 12.1523C2.16864 11.3956 2.62711 10.7079 3.20543 10.1285C3.33438 9.99874 3.40675 9.82327 3.40675 9.64037C3.40675 9.45747 3.33438 9.28201 3.20543 9.1523C3.07572 9.02335 2.90025 8.95098 2.71735 8.95098C2.53446 8.95098 2.35899 9.02335 2.22928 9.1523C1.51973 9.85787 0.957321 10.6973 0.574652 11.6219C0.191984 12.5465 -0.00332801 13.5378 4.29009e-05 14.5385C4.29009e-05 16.7885 3.92543 18 7.61544 18C11.3054 18 15.2308 16.7885 15.2308 14.5385C15.2335 13.5313 15.0353 12.5338 14.6477 11.6042C14.2602 10.6746 13.6912 9.83162 12.9739 9.1246Z"
+                fill="#AC8F78" />
+              <path
+                d="M7.61541 9.69232C8.57389 9.69232 9.51084 9.4081 10.3078 8.8756C11.1047 8.34309 11.7259 7.58623 12.0927 6.70071C12.4595 5.81519 12.5554 4.84079 12.3685 3.90072C12.1815 2.96066 11.7199 2.09716 11.0422 1.41941C10.3644 0.741662 9.50091 0.28011 8.56085 0.0931198C7.62078 -0.0938704 6.64638 0.00209977 5.76086 0.368894C4.87534 0.735689 4.11847 1.35683 3.58597 2.15378C3.05347 2.95073 2.76925 3.88768 2.76925 4.84616C2.76925 6.13144 3.27982 7.36408 4.18865 8.27292C5.09749 9.18175 6.33012 9.69232 7.61541 9.69232ZM7.61541 1.38462C8.30004 1.38462 8.96929 1.58764 9.53854 1.96799C10.1078 2.34835 10.5515 2.88897 10.8135 3.52149C11.0755 4.154 11.144 4.85 11.0104 5.52148C10.8769 6.19295 10.5472 6.80974 10.0631 7.29384C9.57898 7.77795 8.96219 8.10763 8.29072 8.24119C7.61925 8.37476 6.92325 8.30621 6.29073 8.04421C5.65822 7.78222 5.1176 7.33854 4.73724 6.76929C4.35688 6.20005 4.15386 5.53079 4.15386 4.84616C4.15386 3.9281 4.51856 3.04765 5.16773 2.39848C5.81689 1.74932 6.69735 1.38462 7.61541 1.38462Z"
+                fill="#AC8F78" />
+            </svg>
+          </div>
+          <span class="sign-in-button__text">Sign in</span>
+        </button>
+      </div>
+
+
+      <div class="order-dropdown">
+        <p class="item-title item-title--weight">Choose a shipping method</p>
+
+        <select class="form-select order-form-select order-form-select--active form-select--position"
+          aria-label="Default select example">
+          <option class="form-select__item" selected>FedEX</option>
+          <option class="form-select__item" value="1">DeliveryPosT</option>
+          <option class="form-select__item" value="2">To door</option>
+        </select>
+
+        <span class="item-text item-text--light order-item-text">Shipping cost is calculated individually by the
+          manager
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="order-products">
+
+    <div class="order-inner">
+      <div>
+        <span class="order-products__title">Order</span>
+        <span class="order-products__subtitle">8 products</span>
+      </div>
+
+      <div class="order-products-gallery js-order-products-gallery">
+
+        <div>
+          <div class="card card--light">
+            <div class="card__image-wrap card-image-order">
+              <img class="card__image" src="images/common/bottle.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card card--light">
+            <div class="card__image-wrap card-image-order">
+              <img class="card__image" src="images/common/bottles.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card card--light">
+            <div class="card__image-wrap card-image-order">
+              <img class="card__image" src="images/common/pencil.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card card--light">
+            <div class="card__image-wrap card-image-order">
+              <img class="card__image" src="images/common/bottle.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card card--light">
+            <div class="card__image-wrap card-image-order">
+              <img class="card__image" src="images/common/bottles.png" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="order-products__subtext-wrap">
+        <span class="order-products__subtext">Total:</span>
+        <span class="order-products__subtext">54 €</span>
+      </div>
+
+      <div class="order-button-wrap">
+        <button class="button order-button">
+          <span class="button__text">Send your order</span>
+          <div>
+            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.495608 4.49562H8.22016L5.56172 7.15406C5.36818 7.34759 5.36818 7.66144 5.56159 7.85485C5.75513 8.04838 6.0691 8.04838 6.26263 7.85485L9.76695 4.3504C9.79 4.32736 9.81057 4.30196 9.82866 4.27495C9.83696 4.26243 9.84278 4.24893 9.84997 4.23592C9.85814 4.22055 9.86756 4.20593 9.87413 4.1897C9.88119 4.17297 9.88516 4.15563 9.89011 4.13828C9.8942 4.12453 9.89953 4.1114 9.90238 4.09727C9.90882 4.06506 9.91217 4.03259 9.91217 4.00001L9.91204 3.99889C9.91192 3.9668 9.9087 3.93459 9.90238 3.90299C9.8994 3.88812 9.89383 3.87437 9.88949 3.85975C9.88466 3.84327 9.88094 3.82655 9.87425 3.81056C9.86707 3.79334 9.8574 3.77773 9.84848 3.7615C9.84179 3.74935 9.83646 3.73696 9.82878 3.72532C9.81069 3.69793 9.78987 3.67241 9.7667 3.64924L6.26251 0.145167C6.06897 -0.0483682 5.75513 -0.0483684 5.56159 0.145043C5.36806 0.338578 5.36806 0.652422 5.56159 0.846081L8.22004 3.5044H0.495608C0.221909 3.5044 0 3.72631 0 4.00001C0 4.27371 0.221909 4.49562 0.495608 4.49562Z"
+                fill="#555555" />
+            </svg>
+          </div>
+        </button>
+      </div>
+
+      <div class="order-editing-wrap">
+        <button class="editing-button order-editing-button">
+          <div>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.7 1L11.5 3.8L3.8 11.5H1V8.7L8.7 1Z" stroke="#AC8F78" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <span class="editing-button__text">Edit this order</span>
+        </button>
+      </div>
     </div>
 
-
-    <div class="order-dropdown">
-      <p class="item-title item-title--weight">Choose a shipping method</p>
-
-      <select class="form-select order-form-select order-form-select--active form-select--position"
-        aria-label="Default select example">
-        <option class="form-select__item" selected>FedEX</option>
-        <option class="form-select__item" value="1">DeliveryPosT</option>
-        <option class="form-select__item" value="2">To door</option>
-      </select>
-
-      <span class="item-text item-text--light order-item-text">Shipping cost is calculated individually by the
-        manager
-      </span>
-    </div>
   </div>
 </div>
 {% endblock %}

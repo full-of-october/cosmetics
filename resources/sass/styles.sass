@@ -684,14 +684,16 @@
 // order-page start      
 
 .order
-  padding: 60px 15px 53px
+  display: grid
+  grid-template-columns: 1fr
+  +md
+    grid-template-columns: 1fr 1fr
   +lg
-    padding: 100px 15px 80px
+    grid-template-columns: 1fr 1fr 1fr
 
-  &__info
-    margin-top: 70px
-    +lg
-      margin-top: 0
+  &-form
+
+  &-info
 
   &-info-text
     margin: 32px 0 50px
@@ -739,3 +741,77 @@
   margin-top: 10px
   +lg
     margin-top: 20px
+
+.order-products, .order-info, .order-form
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 70px 15px 50px
+  +md
+    padding-top: 125px
+
+.order-products
+  background: #EEE4DA
+  +md
+    grid-column: span 3
+  +lg
+    grid-column: 3
+
+  &__title
+    font-size: 36px
+    line-height: 110%
+    letter-spacing: -0.03em
+    margin-right: 20px
+
+  &__subtitle
+    font-size: 14px
+    line-height: 120%
+    letter-spacing: -0.03em
+
+  &__subtext
+    font-size: 24px
+    line-height: 120%
+    letter-spacing: -0.03em
+
+  &__subtext-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.order-inner
+  width: 100%
+  +md
+    max-width: 330px
+
+.order-products-gallery
+  margin: 30px 0
+
+.order-button
+  background: #F5ECE3
+  width: 320px
+  margin: 30px auto 20px
+  +md
+    width: 100%
+
+.order-editing-button
+  margin: 0 auto
+
+.editing-button
+  display: flex
+  align-items: center
+  gap: 7px
+
+  &__text
+    font-size: 14px
+    line-height: 120%
+    letter-spacing: -0.02em
+    color: #AC8F78
+    transition: all 0.2s ease
+    &:hover
+      color: #555555
+
+.card-image-order
+  padding: 0
+
+.order-products-gallery .slick-slide
+  padding: 0 5px

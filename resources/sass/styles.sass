@@ -685,15 +685,12 @@
 
 .order
   display: grid
+  align-items: start
   grid-template-columns: 1fr
   +md
     grid-template-columns: 1fr 1fr
   +lg
     grid-template-columns: 1fr 1fr 1fr
-
-  &-form
-
-  &-info
 
   &-info-text
     margin: 32px 0 50px
@@ -747,8 +744,11 @@
   justify-content: center
   align-items: center
   padding: 70px 15px 50px
+
+.order-form
+  padding: 70px 15px 0
   +md
-    padding-top: 125px
+    padding-bottom: 50px
 
 .order-products
   background: #EEE4DA
@@ -783,9 +783,6 @@
   +md
     max-width: 330px
 
-.order-products-gallery
-  margin: 30px 0
-
 .order-button
   background: #F5ECE3
   width: 320px
@@ -813,5 +810,64 @@
 .card-image-order
   padding: 0
 
+.card__product--sum
+  font-size: 14px
+  opacity: 0.5
+
+.card__text--smaller
+  padding: 10px
+
+.order-products .order-inner
+  width: initial
+
+.order-products-top
+  position: relative
+
 .order-products-gallery .slick-slide
+  display: flex
+  flex-wrap: wrap
   padding: 0 5px
+  gap: 7px
+
+.order-products-gallery
+  max-width: 330px
+  margin: 30px auto
+  +md
+    margin: 30px 0
+
+  .card
+    flex: 1 1 100px
+
+  .slick-next,
+  .slick-prev
+    display: block
+    position: absolute
+    width: 50px
+    height: 40px
+    padding: 14px 12px
+    transition: all 0.3s ease
+    top: -50px
+    &:hover
+      opacity: 0.7
+    &:before
+      content: " "
+
+    // +md
+    //   display: block
+
+  .slick-prev
+    background: #F5ECE3 url("/images/icons/arrow-left.png") center no-repeat
+    right: 60px
+    left: initial
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+    &:hover, &:focus
+      background: #F5ECE3 url("/images/icons/arrow-left.png") center no-repeat
+
+  .slick-next
+    background: #F5ECE3 url("/images/icons/arrow-right.png") center no-repeat
+    right: 10px
+    border-top-right-radius: 10px
+    border-bottom-right-radius: 10px
+    &:hover, &:focus
+      background: #F5ECE3 url("/images/icons/arrow-right.png") center no-repeat

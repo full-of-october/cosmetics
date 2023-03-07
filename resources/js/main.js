@@ -65,8 +65,9 @@ $('.js-recommendations-gallery').slick({
 
 $('.js-order-products-gallery').slick({
   infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
 });
 
 

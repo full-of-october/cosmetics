@@ -680,3 +680,194 @@
       color: #555555
       box-shadow: none
       border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+
+// order-page start      
+
+.order
+  display: grid
+  align-items: start
+  grid-template-columns: 1fr
+  +md
+    grid-template-columns: 1fr 1fr
+  +lg
+    grid-template-columns: 1fr 1fr 1fr
+
+  &-info-text
+    margin: 32px 0 50px
+    +lg
+      margin: 54px 0 62px
+
+.sign-in-button
+  display: flex
+  align-items: center
+  gap: 12px
+
+  &__text
+    font-size: 16px
+    line-height: 120%
+    letter-spacing: -0.02em
+    color: #AC8F78
+
+.order-sign-in-button
+  margin-top: 18px
+
+.order-form-select
+  background: #EEE4DA url("/images/icons/arrow-down.png") right 0.75rem center no-repeat
+  border-radius: 6px
+  border: none
+  font-size: 16px
+  line-height: 180%
+  padding: 13px 22px
+
+  &:focus
+    border: none
+    box-shadow: none
+    opacity: 1
+
+  &--active
+    color: #555555
+    opacity: 0.5
+
+.form-select__item
+  font-size: 16px
+  line-height: 180%
+  color: #555555
+
+.order-item-text
+  display: inline-flex
+  margin-top: 10px
+  +lg
+    margin-top: 20px
+
+.order-products, .order-info, .order-form
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 70px 15px 50px
+
+.order-form
+  padding: 70px 15px 0
+  +md
+    padding-bottom: 50px
+
+.order-products
+  background: #EEE4DA
+  +md
+    grid-column: span 3
+  +lg
+    grid-column: 3
+
+  &__title
+    font-size: 36px
+    line-height: 110%
+    letter-spacing: -0.03em
+    margin-right: 20px
+
+  &__subtitle
+    font-size: 14px
+    line-height: 120%
+    letter-spacing: -0.03em
+
+  &__subtext
+    font-size: 24px
+    line-height: 120%
+    letter-spacing: -0.03em
+
+  &__subtext-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.order-inner
+  width: 100%
+  +md
+    max-width: 330px
+
+.order-button
+  background: #F5ECE3
+  width: 320px
+  margin: 30px auto 20px
+  +md
+    width: 100%
+
+.order-editing-button
+  margin: 0 auto
+
+.editing-button
+  display: flex
+  align-items: center
+  gap: 7px
+
+  &__text
+    font-size: 14px
+    line-height: 120%
+    letter-spacing: -0.02em
+    color: #AC8F78
+    transition: all 0.2s ease
+    &:hover
+      color: #555555
+
+.card-image-order
+  padding: 0
+
+.card__product--sum
+  font-size: 14px
+  opacity: 0.5
+
+.card__text--smaller
+  padding: 10px
+
+.order-products .order-inner
+  width: initial
+
+.order-products-top
+  position: relative
+
+.order-products-gallery .slick-slide
+  display: flex
+  flex-wrap: wrap
+  padding: 0 5px
+  gap: 7px
+
+.order-products-gallery
+  max-width: 330px
+  margin: 30px auto
+  +md
+    margin: 30px 0
+
+  .card
+    flex: 1 1 100px
+
+  .slick-next,
+  .slick-prev
+    display: block
+    position: absolute
+    width: 50px
+    height: 40px
+    padding: 14px 12px
+    transition: all 0.3s ease
+    top: -50px
+    &:hover
+      opacity: 0.7
+    &:before
+      content: " "
+
+    // +md
+    //   display: block
+
+  .slick-prev
+    background: #F5ECE3 url("/images/icons/arrow-left.png") center no-repeat
+    right: 60px
+    left: initial
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+    &:hover, &:focus
+      background: #F5ECE3 url("/images/icons/arrow-left.png") center no-repeat
+
+  .slick-next
+    background: #F5ECE3 url("/images/icons/arrow-right.png") center no-repeat
+    right: 10px
+    border-top-right-radius: 10px
+    border-bottom-right-radius: 10px
+    &:hover, &:focus
+      background: #F5ECE3 url("/images/icons/arrow-right.png") center no-repeat

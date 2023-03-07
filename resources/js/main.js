@@ -62,6 +62,16 @@ $('.js-recommendations-gallery').slick({
   ]
 });
 
+
+$('.js-order-products-gallery').slick({
+  infinite: true,
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+
+
+
 // $(document).scroll(function (event) {
 //   // document.querySelector("body") === $("body")
 //   let scrollTop = $("body").scrollTop();

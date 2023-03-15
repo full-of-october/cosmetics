@@ -852,9 +852,6 @@
     &:before
       content: " "
 
-    // +md
-    //   display: block
-
   .slick-prev
     background: #F5ECE3 url("/images/icons/arrow-left.png") center no-repeat
     right: 60px
@@ -871,3 +868,141 @@
     border-bottom-right-radius: 10px
     &:hover, &:focus
       background: #F5ECE3 url("/images/icons/arrow-right.png") center no-repeat
+
+// profile start  
+
+.profile
+  background: #EEE4DA
+  display: flex
+  justify-content: center
+  padding: 30px 30px 50px
+  grid-column: 2
+  grid-row: 1 / 1
+  max-height: 880px
+  +xl
+    padding-top: 150px
+
+  &-image
+    margin: 0 auto
+
+  &-title
+    text-align: center
+    margin-bottom: 35px
+    font-size: 36px
+    font-weight: 400
+    display: none
+    +xl
+      display: block
+
+  &-inner
+    max-width: 320px
+    margin: 0 auto
+    text-align: center
+
+  &-button
+    background: #F5ECE3
+    width: 318px
+    margin: 45px 0 35px
+
+.profile-info
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 28px
+  +xl
+    display: block
+
+  &__text
+    +xl
+      margin-top: 33px
+
+    &--name
+      font-size: 24px
+      margin-bottom: 8px
+
+    &--email
+      font-size: 14px
+      margin-bottom: 12px
+
+    &--orders
+      font-size: 12px
+
+.logout-button
+  display: flex
+  align-items: center
+  gap: 10px
+
+.profile-logout-button
+  margin: 0 auto
+
+.profile-page
+
+  +xl
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+  &-wrap
+    text-align: center
+    margin: 70px 0 30px
+
+    &--hidden
+      +xl
+        display: none
+
+.orders-item
+  max-width: 840px
+  margin: 0 auto
+
+.orders-item-description
+  position: relative
+  margin-bottom: 35px
+  margin-top: 50px
+  display: flex
+  align-items: center
+  gap: 50px
+  +xl
+    margin-bottom: 70px
+    margin-top: 70px
+
+.orders-item
+
+  &__title
+    display: block
+    font-size: 24px
+    margin-bottom: 8px
+
+  &__subtitle
+    display: block
+    font-size: 13px
+    opacity: 0.5
+
+.orders-item-button
+  min-width: 170px
+  height: 50px
+
+.profile-orders-title
+  display: none
+  +xl
+    display: block
+
+.profile-orders
+  grid-column: 1
+  grid-row: 1 / 1
+  margin: 0 auto
+  padding-left: 15px
+  +xl
+    padding: 100px 70px
+
+.orders-item .order-profile-gallery
+  .slick-next,
+  .slick-prev
+    display: none!important
+    top: -60px
+    +md
+      display: block!important
+    +xl
+      top: -90px
+
+.recommendations-profile-page
+  padding-left: 15px
+  margin: 50px auto 90px

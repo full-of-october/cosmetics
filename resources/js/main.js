@@ -70,6 +70,42 @@ $('.js-order-products-gallery').slick({
   slidesToScroll: 1
 });
 
+$('.js-order-profile-gallery').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  customPaging: 20,
+  autoplaySpeed: 5000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        arrows: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
 
 
 // $(document).scroll(function (event) {

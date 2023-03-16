@@ -32,20 +32,20 @@ const stylesDev = "./resources/sass/**/*.sass",
         // "./node_modules/simple-parallax-js/dist/simpleParallax.js",
         "./resources/js/**/*.js",
     ],
-    stylesProdDir = "./app/css/",
-    scriptsProdDir = "./app/js/";
+    stylesProdDir = "./docs/css/",
+    scriptsProdDir = "./docs/js/";
 
 gulp.task("browser-sync", function (done) {
     browserSync.init({
         server: {
-            baseDir: "./app/",
+            baseDir: "./docs/",
             // directory: true,
             index: "index.html",
         },
         notify: false,
     });
 
-    browserSync.watch("./app/**.html").on("change", browserSync.reload);
+    browserSync.watch("./docs/**.html").on("change", browserSync.reload);
 
     done();
 });
@@ -75,7 +75,7 @@ gulp.task("html", function (done) {
     return gulp
         .src('./resources/twig/pages/*.twig')
         .pipe(twig())
-        .pipe(gulp.dest('./app/'))
+        .pipe(gulp.dest('./docs/'))
         .pipe(browserSync.reload({ stream: true }));
 
     done();

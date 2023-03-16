@@ -1,0 +1,317 @@
+{% extends "../layout/default.twig" %}
+
+{% block page %}
+<div class="profile-page">
+  <div class="profile-page-wrap profile-page-wrap--hidden">
+    <h2 class="title">History of orders</h2>
+  </div>
+
+  <div class="profile">
+    <div class="profile-inner">
+      <h3 class="profile-title">Profile</h3>
+
+      <div class="profile-info">
+        <div class="profile-info__image">
+          <img class="profile-image" src="/images/profile-page/profile-image.png" alt="">
+        </div>
+
+        <div class="profile-info__text">
+          <p class="profile-info__text--name">Rosa Morena</p>
+          <p class="profile-info__text--email">rosamorena@gmail.com</p>
+          <p class="profile-info__text--orders">7 orders on account</p>
+        </div>
+      </div>
+
+      <div>
+        <button class="button profile-button">
+          <span class="button__text">Edit your profile</span>
+          <div>
+            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.495608 4.49562H8.22016L5.56172 7.15406C5.36818 7.34759 5.36818 7.66144 5.56159 7.85485C5.75513 8.04838 6.0691 8.04838 6.26263 7.85485L9.76695 4.3504C9.79 4.32736 9.81057 4.30196 9.82866 4.27495C9.83696 4.26243 9.84278 4.24893 9.84997 4.23592C9.85814 4.22055 9.86756 4.20593 9.87413 4.1897C9.88119 4.17297 9.88516 4.15563 9.89011 4.13828C9.8942 4.12453 9.89953 4.1114 9.90238 4.09727C9.90882 4.06506 9.91217 4.03259 9.91217 4.00001L9.91204 3.99889C9.91192 3.9668 9.9087 3.93459 9.90238 3.90299C9.8994 3.88812 9.89383 3.87437 9.88949 3.85975C9.88466 3.84327 9.88094 3.82655 9.87425 3.81056C9.86707 3.79334 9.8574 3.77773 9.84848 3.7615C9.84179 3.74935 9.83646 3.73696 9.82878 3.72532C9.81069 3.69793 9.78987 3.67241 9.7667 3.64924L6.26251 0.145167C6.06897 -0.0483682 5.75513 -0.0483684 5.56159 0.145043C5.36806 0.338578 5.36806 0.652422 5.56159 0.846081L8.22004 3.5044H0.495608C0.221909 3.5044 0 3.72631 0 4.00001C0 4.27371 0.221909 4.49562 0.495608 4.49562Z"
+                fill="#555555" />
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div>
+        <button class="logout-button profile-logout-button">
+          <div>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5 13H2.33333C1.97971 13 1.64057 12.8595 1.39052 12.6095C1.14048 12.3594 1 12.0203 1 11.6667V2.33333C1 1.97971 1.14048 1.64057 1.39052 1.39052C1.64057 1.14048 1.97971 1 2.33333 1H5M9.66667 10.3333L13 7M13 7L9.66667 3.66667M13 7H5"
+                stroke="#555555" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <span class="item-text">Logout</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="profile-orders">
+    <h2 class="title profile-orders-title">History of orders</h2>
+
+    <div class="orders-item recommendations">
+
+      <div class="orders-item-description">
+        <div>
+          <span class="orders-item__title">Order №344</span>
+          <span class="orders-item__subtitle">In the amount of 154 €</span>
+        </div>
+
+        <button class="button orders-item-button">
+          <div>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7C0 3.13401 3.13401 0 7 0ZM7 1.4C3.90721 1.4 1.4 3.90721 1.4 7C1.4 10.0928 3.90721 12.6 7 12.6C10.0928 12.6 12.6 10.0928 12.6 7C12.6 3.90721 10.0928 1.4 7 1.4ZM7 2.8C7.35898 2.8 7.65485 3.07023 7.69529 3.41837L7.7 3.5V6.71005L8.89497 7.90503C9.16834 8.17839 9.16834 8.62161 8.89497 8.89497C8.64264 9.14731 8.24557 9.16672 7.97097 8.95321L7.90503 8.89497L6.50503 7.49497C6.39563 7.38558 6.32618 7.2437 6.30607 7.09201L6.3 7V3.5C6.3 3.1134 6.6134 2.8 7 2.8Z"
+                fill="black" />
+            </svg>
+          </div>
+          <span class="item-text item-text--dark">Order pending</span>
+        </button>
+      </div>
+
+      <div class="recommendations__gallery js-order-profile-gallery order-profile-gallery">
+        <div>
+          <div class="card category-card">
+            <div class="card__image-wrap">
+              <img class="card__image" src="images/common/bottle.png" alt="">
+            </div>
+            <div class="card__text">
+              <span class="card__product">Perfect brows</span>
+              <span class="card__price">54 €</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card category-card">
+            <div class="card__image-wrap">
+              <img class="card__image" src="images/common/bottles.png" alt="">
+            </div>
+            <div class="card__text">
+              <span class="card__product">Perfect brows</span>
+              <span class="card__price">54 €</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card category-card">
+            <div class="card__image-wrap">
+              <img class="card__image" src="images/common/pencil.png" alt="">
+            </div>
+            <div class="card__text">
+              <span class="card__product">Perfect brows</span>
+              <span class="card__price">54 €</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card category-card">
+            <div class="card__image-wrap">
+              <img class="card__image" src="images/common/bottle.png" alt="">
+            </div>
+            <div class="card__text">
+              <span class="card__product">Perfect brows</span>
+              <span class="card__price">54 €</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card category-card">
+            <div class="card__image-wrap">
+              <img class="card__image" src="images/common/bottles.png" alt="">
+            </div>
+            <div class="card__text">
+              <span class="card__product">Perfect brows</span>
+              <span class="card__price">54 €</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card category-card">
+            <div class="card__image-wrap">
+              <img class="card__image" src="images/common/pencil.png" alt="">
+            </div>
+            <div class="card__text">
+              <span class="card__product">Perfect brows</span>
+              <span class="card__price">54 €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="orders-item recommendations">
+
+      <div class="orders-item-description">
+        <div>
+          <span class="orders-item__title">Order №345</span>
+          <span class="orders-item__subtitle">In the amount of 154 €</span>
+        </div>
+
+        <button class="button orders-item-button">
+          <div>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7C0 3.13401 3.13401 0 7 0ZM7 1.4C3.90721 1.4 1.4 3.90721 1.4 7C1.4 10.0928 3.90721 12.6 7 12.6C10.0928 12.6 12.6 10.0928 12.6 7C12.6 3.90721 10.0928 1.4 7 1.4ZM7 2.8C7.35898 2.8 7.65485 3.07023 7.69529 3.41837L7.7 3.5V6.71005L8.89497 7.90503C9.16834 8.17839 9.16834 8.62161 8.89497 8.89497C8.64264 9.14731 8.24557 9.16672 7.97097 8.95321L7.90503 8.89497L6.50503 7.49497C6.39563 7.38558 6.32618 7.2437 6.30607 7.09201L6.3 7V3.5C6.3 3.1134 6.6134 2.8 7 2.8Z"
+                fill="black" />
+            </svg>
+          </div>
+          <span class="item-text item-text--dark">Order pending</span>
+        </button>
+      </div>
+
+      <div class="recommendations__gallery js-order-profile-gallery order-profile-gallery">
+        <div>
+          <div class="card category-card">
+            <div class="card__image-wrap">
+              <img class="card__image" src="images/common/bottle.png" alt="">
+            </div>
+            <div class="card__text">
+              <span class="card__product">Perfect brows</span>
+              <span class="card__price">54 €</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card category-card">
+            <div class="card__image-wrap">
+              <img class="card__image" src="images/common/bottles.png" alt="">
+            </div>
+            <div class="card__text">
+              <span class="card__product">Perfect brows</span>
+              <span class="card__price">54 €</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card category-card">
+            <div class="card__image-wrap">
+              <img class="card__image" src="images/common/pencil.png" alt="">
+            </div>
+            <div class="card__text">
+              <span class="card__product">Perfect brows</span>
+              <span class="card__price">54 €</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card category-card">
+            <div class="card__image-wrap">
+              <img class="card__image" src="images/common/bottle.png" alt="">
+            </div>
+            <div class="card__text">
+              <span class="card__product">Perfect brows</span>
+              <span class="card__price">54 €</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card category-card">
+            <div class="card__image-wrap">
+              <img class="card__image" src="images/common/bottles.png" alt="">
+            </div>
+            <div class="card__text">
+              <span class="card__product">Perfect brows</span>
+              <span class="card__price">54 €</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card category-card">
+            <div class="card__image-wrap">
+              <img class="card__image" src="images/common/pencil.png" alt="">
+            </div>
+            <div class="card__text">
+              <span class="card__product">Perfect brows</span>
+              <span class="card__price">54 €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="orders-item recommendations recommendations-profile-page">
+    <div class="recommendations__description recommendations__description--position">
+      <h2 class="recommendations__text">We care about your beauty, so we recommend that you consider other products</h2>
+    </div>
+    <div class="recommendations__gallery js-order-profile-gallery order-profile-gallery">
+      <div>
+        <div class="card category-card">
+          <div class="card__image-wrap">
+            <img class="card__image" src="images/common/bottle.png" alt="">
+          </div>
+          <div class="card__text">
+            <span class="card__product">Perfect brows</span>
+            <span class="card__price">54 €</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card category-card">
+          <div class="card__image-wrap">
+            <img class="card__image" src="images/common/bottles.png" alt="">
+          </div>
+          <div class="card__text">
+            <span class="card__product">Perfect brows</span>
+            <span class="card__price">54 €</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card category-card">
+          <div class="card__image-wrap">
+            <img class="card__image" src="images/common/pencil.png" alt="">
+          </div>
+          <div class="card__text">
+            <span class="card__product">Perfect brows</span>
+            <span class="card__price">54 €</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card category-card">
+          <div class="card__image-wrap">
+            <img class="card__image" src="images/common/bottle.png" alt="">
+          </div>
+          <div class="card__text">
+            <span class="card__product">Perfect brows</span>
+            <span class="card__price">54 €</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card category-card">
+          <div class="card__image-wrap">
+            <img class="card__image" src="images/common/bottles.png" alt="">
+          </div>
+          <div class="card__text">
+            <span class="card__product">Perfect brows</span>
+            <span class="card__price">54 €</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card category-card">
+          <div class="card__image-wrap">
+            <img class="card__image" src="images/common/pencil.png" alt="">
+          </div>
+          <div class="card__text">
+            <span class="card__product">Perfect brows</span>
+            <span class="card__price">54 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+{% endblock %}

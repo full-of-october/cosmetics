@@ -10,20 +10,6 @@
 @import "_vendor-custom"
 @import "_icons"
 
-// <div class="icon-search">
-//   <svg width="160" height="160" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-//     <path
-//       d="M15 15L10.9556 10.9556M12.6667 6.83333C12.6667 10.055 10.055 12.6667 6.83333 12.6667C3.61167 12.6667 1 10.055 1 6.83333C1 3.61167 3.61167 1 6.83333 1C10.055 1 12.6667 3.61167 12.6667 6.83333Z"
-//       stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-//   </svg>
-// </div>
-
-// .navbar-wrap
-//   +max(992)
-//     padding-top: 40px
-//     border-top: 1px solid rgba(0, 0, 0, 0.05)
-//     margin-top: 15px  
-
 // category start
 
 .category-menu
@@ -62,8 +48,6 @@
   object-fit: cover
   +lg
     height: auto
-
-// category end    
 
 // index start  
 
@@ -680,3 +664,330 @@
       color: #555555
       box-shadow: none
       border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+
+// order-page start      
+
+.order
+  display: grid
+  align-items: start
+  grid-template-columns: 1fr
+  +md
+    grid-template-columns: 1fr 1fr
+  +lg
+    grid-template-columns: 1fr 1fr 1fr
+
+  &-info-text
+    margin: 32px 0 50px
+    +lg
+      margin: 54px 0 62px
+
+.sign-in-button
+  display: flex
+  align-items: center
+  gap: 12px
+
+  &__text
+    font-size: 16px
+    line-height: 120%
+    letter-spacing: -0.02em
+    color: #AC8F78
+
+.order-sign-in-button
+  margin-top: 18px
+
+.order-form-select
+  background: #EEE4DA url("/images/icons/arrow-down.png") right 0.75rem center no-repeat
+  border-radius: 6px
+  border: none
+  font-size: 16px
+  line-height: 180%
+  padding: 13px 22px
+
+  &:focus
+    border: none
+    box-shadow: none
+    opacity: 1
+
+  &--active
+    color: #555555
+    opacity: 0.5
+
+.form-select__item
+  font-size: 16px
+  line-height: 180%
+  color: #555555
+
+.order-item-text
+  display: inline-flex
+  margin-top: 10px
+  +lg
+    margin-top: 20px
+
+.order-products, .order-info, .order-form
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 70px 15px 50px
+
+.order-form
+  padding: 70px 15px 0
+  +md
+    padding-bottom: 50px
+
+.order-products
+  background: #EEE4DA
+  +md
+    grid-column: span 3
+  +lg
+    grid-column: 3
+
+  &__title
+    font-size: 36px
+    line-height: 110%
+    letter-spacing: -0.03em
+    margin-right: 20px
+
+  &__subtitle
+    font-size: 14px
+    line-height: 120%
+    letter-spacing: -0.03em
+
+  &__subtext
+    font-size: 24px
+    line-height: 120%
+    letter-spacing: -0.03em
+
+  &__subtext-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.order-inner
+  width: 100%
+  +md
+    max-width: 330px
+
+.order-button
+  background: #F5ECE3
+  width: 320px
+  margin: 30px auto 20px
+  +md
+    width: 100%
+
+.order-editing-button
+  margin: 0 auto
+
+.editing-button
+  display: flex
+  align-items: center
+  gap: 7px
+
+  &__text
+    font-size: 14px
+    line-height: 120%
+    letter-spacing: -0.02em
+    color: #AC8F78
+    transition: all 0.2s ease
+    &:hover
+      color: #555555
+
+.card-image-order
+  padding: 0
+
+.card__product--sum
+  font-size: 14px
+  opacity: 0.5
+
+.card__text--smaller
+  padding: 10px
+
+.order-products .order-inner
+  width: initial
+
+.order-products-top
+  position: relative
+
+.order-products-gallery .slick-slide
+  display: flex
+  flex-wrap: wrap
+  padding: 0 5px
+  gap: 7px
+
+.order-products-gallery
+  max-width: 330px
+  margin: 30px auto
+  +md
+    margin: 30px 0
+
+  .card
+    flex: 1 1 100px
+
+  .slick-next,
+  .slick-prev
+    display: block
+    position: absolute
+    width: 50px
+    height: 40px
+    padding: 14px 12px
+    transition: all 0.3s ease
+    top: -50px
+    &:hover
+      opacity: 0.7
+    &:before
+      content: " "
+
+  .slick-prev
+    background: #F5ECE3 url("/images/icons/arrow-left.png") center no-repeat
+    right: 60px
+    left: initial
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+    &:hover, &:focus
+      background: #F5ECE3 url("/images/icons/arrow-left.png") center no-repeat
+
+  .slick-next
+    background: #F5ECE3 url("/images/icons/arrow-right.png") center no-repeat
+    right: 10px
+    border-top-right-radius: 10px
+    border-bottom-right-radius: 10px
+    &:hover, &:focus
+      background: #F5ECE3 url("/images/icons/arrow-right.png") center no-repeat
+
+// profile start  
+
+.profile
+  background: #EEE4DA
+  display: flex
+  justify-content: center
+  padding: 30px 30px 50px
+  grid-column: 2
+  grid-row: 1 / 1
+  max-height: 880px
+  +xl
+    padding-top: 150px
+
+  &-image
+    margin: 0 auto
+
+  &-title
+    text-align: center
+    margin-bottom: 35px
+    font-size: 36px
+    font-weight: 400
+    display: none
+    +xl
+      display: block
+
+  &-inner
+    max-width: 320px
+    margin: 0 auto
+    text-align: center
+
+  &-button
+    background: #F5ECE3
+    width: 318px
+    margin: 45px 0 35px
+
+.profile-info
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 28px
+  +xl
+    display: block
+
+  &__text
+    +xl
+      margin-top: 33px
+
+    &--name
+      font-size: 24px
+      margin-bottom: 8px
+
+    &--email
+      font-size: 14px
+      margin-bottom: 12px
+
+    &--orders
+      font-size: 12px
+
+.logout-button
+  display: flex
+  align-items: center
+  gap: 10px
+
+.profile-logout-button
+  margin: 0 auto
+
+.profile-page
+
+  +xl
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+  &-wrap
+    text-align: center
+    margin: 70px 0 30px
+
+    &--hidden
+      +xl
+        display: none
+
+.orders-item
+  max-width: 840px
+  margin: 0 auto
+
+.orders-item-description
+  position: relative
+  margin-bottom: 35px
+  margin-top: 50px
+  display: flex
+  align-items: center
+  gap: 50px
+  +xl
+    margin-bottom: 70px
+    margin-top: 70px
+
+.orders-item
+
+  &__title
+    display: block
+    font-size: 24px
+    margin-bottom: 8px
+
+  &__subtitle
+    display: block
+    font-size: 13px
+    opacity: 0.5
+
+.orders-item-button
+  min-width: 170px
+  height: 50px
+
+.profile-orders-title
+  display: none
+  +xl
+    display: block
+
+.profile-orders
+  grid-column: 1
+  grid-row: 1 / 1
+  margin: 0 auto
+  padding-left: 15px
+  +xl
+    padding: 100px 70px
+
+.orders-item .order-profile-gallery
+  .slick-next,
+  .slick-prev
+    // TODO change arrow in js 
+    display: none!important
+    top: -60px
+    +md
+      display: block!important
+    +xl
+      top: -90px
+
+.recommendations-profile-page
+  padding-left: 15px
+  margin: 50px auto 90px
